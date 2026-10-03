@@ -1,0 +1,25 @@
+loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+Listening on 
+             udp: 127.0.0.1 [127.0.0.1]:5060
+Aliases: 
+
+ 0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 326 [ msgs/total/min/max/avg - LR: 1000/319304/170/1733/319.304000 | GB: 1000/319304/170/1733/319.304000]
+ 6(7) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 349 [ msgs/total/min/max/avg - LR: 1000/360830/160/3662/360.830000 | GB: 2000/680566/160/3662/340.283000]
+13(14) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 226 [ msgs/total/min/max/avg - LR: 1000/337012/143/2230/337.012000 | GB: 3000/1017578/143/3662/339.192667]
+14(15) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 283 [ msgs/total/min/max/avg - LR: 1000/393415/150/3537/393.415000 | GB: 4000/1411295/143/3662/352.823750]
+ 1(2) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 298 [ msgs/total/min/max/avg - LR: 1000/356339/153/2982/356.339000 | GB: 5000/1767634/143/3662/353.526800]
+ 3(4) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 281 [ msgs/total/min/max/avg - LR: 1000/323982/160/2116/323.982000 | GB: 6000/2092200/143/3662/348.700000]
+12(13) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 407 [ msgs/total/min/max/avg - LR: 1000/361744/159/2958/361.744000 | GB: 7000/2454126/143/3662/350.589429]
+ 7(8) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 295 [ msgs/total/min/max/avg - LR: 1000/354750/173/3226/354.750000 | GB: 8000/2808876/143/3662/351.109500]
+14(15) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 378 [ msgs/total/min/max/avg - LR: 1000/390580/187/3072/390.580000 | GB: 9000/3199838/143/3662/355.537556]
+15(16) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 216 [ msgs/total/min/max/avg - LR: 1000/331767/163/3191/331.767000 | GB: 10000/3531605/143/3662/353.160500]
+ 9(10) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 441 [ msgs/total/min/max/avg - LR: 1000/381889/204/690/381.889000 | GB: 11000/3913750/143/3662/355.795455]
+ 9(10) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 347 [ msgs/total/min/max/avg - LR: 1000/388870/179/3178/388.870000 | GB: 12000/4302778/143/3662/358.564833]
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 294 [ msgs/total/min/max/avg - LR: 1000/343526/132/2480/343.526000 | GB: 13000/4646667/132/3662/357.435923]
+12(13) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 387 [ msgs/total/min/max/avg - LR: 1000/397779/163/3377/397.779000 | GB: 14000/5044446/132/3662/360.317571]
+ 1(2) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 613 [ msgs/total/min/max/avg - LR: 1000/417911/187/3414/417.911000 | GB: 15000/5462357/132/3662/364.157133]
+16(17) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 283 [ msgs/total/min/max/avg - LR: 1000/416944/176/4652/416.944000 | GB: 16000/5879897/132/4652/367.493562]
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 259 [ msgs/total/min/max/avg - LR: 1000/378070/190/2905/378.070000 | GB: 17000/6257967/132/4652/368.115706]
+ 3(4) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 462 [ msgs/total/min/max/avg - LR: 1000/375210/196/3113/375.210000 | GB: 18000/6633473/132/4652/368.526278]
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 322 [ msgs/total/min/max/avg - LR: 1000/396631/168/3401/396.631000 | GB: 19000/7030163/132/4652/370.008579]

@@ -1,0 +1,25 @@
+loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+Listening on 
+             udp: 127.0.0.1 [127.0.0.1]:5060
+Aliases: 
+
+ 0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file
+ 1(2) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 470 [ msgs/total/min/max/avg - LR: 1000/4242624/232/71283/4242.624000 | GB: 1000/4209025/232/71283/4209.025000]
+13(14) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 469 [ msgs/total/min/max/avg - LR: 1000/1443217/244/31981/1443.217000 | GB: 2001/5652714/232/71283/2824.944528]
+ 4(5) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 550 [ msgs/total/min/max/avg - LR: 1000/614883/235/11018/614.883000 | GB: 3000/6267597/232/71283/2089.199000]
+ 7(8) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 483 [ msgs/total/min/max/avg - LR: 1000/741120/249/20257/741.120000 | GB: 4000/7008717/232/71283/1752.179250]
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 508 [ msgs/total/min/max/avg - LR: 1000/1224070/262/21233/1224.070000 | GB: 5001/8232787/232/71283/1646.228154]
+ 8(9) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 365 [ msgs/total/min/max/avg - LR: 1000/717986/248/14820/717.986000 | GB: 6000/8950773/232/71283/1491.795500]
+ 4(5) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 13090 [ msgs/total/min/max/avg - LR: 1000/2091494/244/69603/2091.494000 | GB: 7000/11042701/232/71283/1577.528714]
+14(15) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 584 [ msgs/total/min/max/avg - LR: 1000/1366069/267/32291/1366.069000 | GB: 8000/12406862/232/71283/1550.857750]
+11(12) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 337 [ msgs/total/min/max/avg - LR: 1000/1945064/225/30810/1945.064000 | GB: 9001/14312080/225/71283/1590.054438]
+ 2(3) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 461 [ msgs/total/min/max/avg - LR: 1000/2808213/255/51221/2808.213000 | GB: 10000/17119802/225/71283/1711.980200]
+ 8(9) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 30331 [ msgs/total/min/max/avg - LR: 1000/2038100/243/54977/2038.100000 | GB: 11000/19158370/225/71283/1741.670000]
+ 3(4) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 681 [ msgs/total/min/max/avg - LR: 1000/1327045/216/26923/1327.045000 | GB: 12000/20515784/216/71283/1709.648667]
+11(12) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 512 [ msgs/total/min/max/avg - LR: 1000/1808705/228/32850/1808.705000 | GB: 13000/22322979/216/71283/1717.152231]
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 386 [ msgs/total/min/max/avg - LR: 1000/919101/231/32959/919.101000 | GB: 14000/23240574/216/71283/1660.041000]
+ 5(6) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 404 [ msgs/total/min/max/avg - LR: 1000/1840532/245/46357/1840.532000 | GB: 15000/25078410/216/71283/1671.894000]
+ 4(5) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 396 [ msgs/total/min/max/avg - LR: 1000/1644792/258/33572/1644.792000 | GB: 16000/26723595/216/71283/1670.224688]
+12(13) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 545 [ msgs/total/min/max/avg - LR: 1000/2286079/264/31322/2286.079000 | GB: 17001/29010012/216/71283/1706.370919]
+12(13) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 439 [ msgs/total/min/max/avg - LR: 1000/2199242/225/33806/2199.242000 | GB: 18000/31209254/216/71283/1733.847444]
+ 1(2) NOTICE: benchmark [benchmark.c:343]: _bm_log_timer(): benchmark (timer call [0]): 335 [ msgs/total/min/max/avg - LR: 1000/2387281/257/80072/2387.281000 | GB: 19000/33582921/216/80072/1767.522158]

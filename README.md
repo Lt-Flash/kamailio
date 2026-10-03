@@ -18,6 +18,7 @@ Tests ran on 2026-10-02/03.
 | 3 | [04-phase3-trunk-limits.md](04-phase3-trunk-limits.md) | Trunk channel limits under 120 INVITEs in 20 ms, 20 runs per arm, with two must-fail controls | Tie: 0 of 20 runs oversold for both atomic designs |
 | 3a–c | [05-phase3abc-lifecycle.md](05-phase3abc-lifecycle.md) | Release paths: 486, a backend stall longer than `cmd_timeout`, and `kill -9` of Kamailio | Tie; a backend stall leaks reservations on both modules (8 vs 4 per stall), giving **bugs L1, L2** |
 | 4 | [07-phase4-sanitizers-soak.md](07-phase4-sanitizers-soak.md) | ASan+UBSan build with libc pkg malloc (probes + 30 min soak), 30 min release soak with per-process `pkg` and fds, 100 Tarantool restarts under load | **No memory errors, no UB, no leaks or fd growth** over 9 M calls; B4 reconfirmed: restarts every ~8 s make 75 % of calls fail |
+| — | [08-latency.md](08-latency.md) | Per-call latency inside Kamailio (`benchmark` module), empty call and CDR lookup, 1k cps | `ndb_tarantool` 244 / 370 µs vs `ndb_redis` 224 / 267 µs average; Redis `FT.SEARCH` 1.8 ms |
 
 ## Bugs found
 
