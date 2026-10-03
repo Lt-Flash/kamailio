@@ -1,0 +1,5 @@
+=== 2026-10-03 20:32:39 AEST stages=asan_probes asan_soak rel_soak restarts
+asan_probes	asan_errors=0 leak_reports=0 ubsan_errors=0 report_files=0	probes=48
+asan_soak	ok=8999999 fail=1	asan_errors=0 leak_reports=0 ubsan_errors=0 report_files=0	pss_kB_first=2804273 last=2811259
+rel_soak	ok=8993636 fail=0	pkg_used_growth_bytes: max_per_process=392352 total=15616	fds_start=[6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 9 ] fds_end=[6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 9 ]	answers=200/200 correct=200 wrong=0
+restarts	n=100 ok=160764 fail=472713	fds_start=[6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 9 ] fds_end=[6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 9 ]	conns_after=12	pkg_used_growth_bytes: max_per_process=397456 total=32608	answers=196/200 correct=196 wrong=0

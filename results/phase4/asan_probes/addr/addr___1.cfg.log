@@ -1,0 +1,44 @@
+2026-10-03T20:33:06.822814000+10:00  0(1) INFO: ndb_tarantool [tarantool_client.c:226]: tnt_add_server(): registered tarantool server [default] -> ::1:13301
+2026-10-03T20:33:06.826502000+10:00  0(1) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+2026-10-03T20:33:06.828966000+10:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-03T20:33:06.829098000+10:00 Listening on 
+2026-10-03T20:33:06.829199000+10:00              udp: 127.0.0.1:5060
+2026-10-03T20:33:06.829315000+10:00 Aliases: 
+2026-10-03T20:33:06.829436000+10:00              udp: localhost:5060
+2026-10-03T20:33:06.829532000+10:00 
+2026-10-03T20:33:06.829634000+10:00  0(1) INFO: <core> [main.c:3339]: main(): current open file limits [soft/hard]: [1048576/1048576]
+2026-10-03T20:33:06.829735000+10:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-03T20:33:06.829829000+10:00  0(1) INFO: sl [sl.c:178]: mod_init(): could not bind tm module - only stateless mode available during modules initialization
+2026-10-03T20:33:06.829927000+10:00  0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:162]: mod_init(): initializing ndb_tarantool module...
+2026-10-03T20:33:06.830024000+10:00  0(1) INFO: <core> [main.c:3410]: main(): processes (at least): 5 - shm size: 67108864 - pkg size: 8388608
+2026-10-03T20:33:06.830125000+10:00  0(1) INFO: <core> [main.c:3433]: main(): tcp main processing threads not enabled
+2026-10-03T20:33:06.832227000+10:00  0(1) INFO: <core> [core/udp_server.c:791]: probe_max_receive_buffer(): SO_RCVBUF is initially 212992 for fd 3
+2026-10-03T20:33:06.832362000+10:00  0(1) INFO: <core> [core/udp_server.c:861]: probe_max_receive_buffer(): SO_RCVBUF is finally 524288 on fd 3
+2026-10-03T20:33:06.832454000+10:00  0(1) INFO: <core> [core/udp_server.c:892]: probe_max_send_buffer(): SO_SNDBUF is initially 212992 for fd 3
+2026-10-03T20:33:06.832537000+10:00  0(1) INFO: <core> [core/udp_server.c:962]: probe_max_send_buffer(): SO_SNDBUF is finally 524288 on fd 3
+2026-10-03T20:33:06.832615000+10:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-03T20:33:06.832685000+10:00  0(1) INFO: sl [sl.c:197]: child_init(): could not bind tm module - only stateless mode available during runtime
+2026-10-03T20:33:06.836258000+10:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:549]: tnt_conn_connect(): invalid IPv4 address: ::1
+2026-10-03T20:33:06.836417000+10:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:621]: tnt_child_init(): failed to connect to Tarantool ::1:13301 on child init
+2026-10-03T20:33:06.836505000+10:00  1(2) ERROR: ndb_tarantool [ndb_tarantool_mod.c:180]: child_init(): failed to initialize tarantool connections for child rank 1
+2026-10-03T20:33:06.836580000+10:00  1(2) ERROR: <core> [core/sr_module.c:936]: init_mod_child(): error while initializing module ndb_tarantool (/opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so) (idx: 1 rank: 1 desc: [udp receiver child=0 sock=127.0.0.1:5060])
+2026-10-03T20:33:06.836658000+10:00  1(2) ERROR: <core> [core/pt.c:335]: fork_process(): init_child failed for process 1, pid 2, "udp receiver child=0 sock=127.0.0.1:5060"
+2026-10-03T20:33:06.836727000+10:00  1(2) CRITICAL: <core> [main.c:1893]: main_loop(): Cannot fork
+2026-10-03T20:33:06.837567000+10:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:549]: tnt_conn_connect(): invalid IPv4 address: ::1
+2026-10-03T20:33:06.837670000+10:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:621]: tnt_child_init(): failed to connect to Tarantool ::1:13301 on child init
+2026-10-03T20:33:06.837740000+10:00  2(3) ERROR: ndb_tarantool [ndb_tarantool_mod.c:180]: child_init(): failed to initialize tarantool connections for child rank -1
+2026-10-03T20:33:06.837818000+10:00  2(3) ERROR: <core> [core/sr_module.c:936]: init_mod_child(): error while initializing module ndb_tarantool (/opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so) (idx: 2 rank: -1 desc: [slow timer])
+2026-10-03T20:33:06.837893000+10:00  2(3) ERROR: <core> [core/pt.c:335]: fork_process(): init_child failed for process 2, pid 3, "slow timer"
+2026-10-03T20:33:06.837960000+10:00  2(3) CRITICAL: <core> [main.c:1999]: main_loop(): cannot fork "slow" timer process
+2026-10-03T20:33:06.839456000+10:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:549]: tnt_conn_connect(): invalid IPv4 address: ::1
+2026-10-03T20:33:06.839596000+10:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:621]: tnt_child_init(): failed to connect to Tarantool ::1:13301 on child init
+2026-10-03T20:33:06.839687000+10:00  3(4) ERROR: ndb_tarantool [ndb_tarantool_mod.c:180]: child_init(): failed to initialize tarantool connections for child rank -1
+2026-10-03T20:33:06.839762000+10:00  3(4) ERROR: <core> [core/sr_module.c:936]: init_mod_child(): error while initializing module ndb_tarantool (/opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so) (idx: 3 rank: -1 desc: [timer])
+2026-10-03T20:33:06.839835000+10:00  3(4) ERROR: <core> [core/pt.c:335]: fork_process(): init_child failed for process 3, pid 4, "timer"
+2026-10-03T20:33:06.839900000+10:00  3(4) CRITICAL: <core> [main.c:2016]: main_loop(): cannot fork timer process
+2026-10-03T20:33:06.840336000+10:00  0(1) ALERT: <core> [main.c:820]: handle_sigs(): child process 2 exited normally, status=255
+2026-10-03T20:33:06.840449000+10:00  0(1) ALERT: <core> [main.c:820]: handle_sigs(): child process 3 exited normally, status=255
+2026-10-03T20:33:06.840525000+10:00  0(1) INFO: <core> [main.c:851]: handle_sigs(): terminating due to SIGCHLD
+2026-10-03T20:33:06.840597000+10:00  4(5) INFO: <core> [main.c:907]: sig_usr(): signal 15 received
+2026-10-03T20:33:06.842385000+10:00  0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:192]: mod_destroy(): destroying ndb_tarantool module resources...
+2026-10-03T20:33:06.842601000+10:00  0(1) INFO: <core> [core/sctp_core.c:53]: sctp_core_destroy(): SCTP API not initialized

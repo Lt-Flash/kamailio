@@ -1,0 +1,16 @@
+20:26:32 build asan-sys start
+20:32:37 build asan-sys exit=0
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+d199c3961395a3d7eb53e56b4faf8228  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+3
+0
+20:32:38 === phase4 start: stages=asan_probes asan_soak rel_soak restarts soak=1800s@5000cps restarts=100 gens=GEN_A:12 GEN_B:6
+20:32:38 localhost/ndbt-kam:asan-sys: abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README d199c3961395a3d7eb53e56b4faf8228  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+20:32:39 localhost/ndbt-kam:rel: abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+20:32:40 tarantool d5k loaded (5000 rows)
+20:33:46 tarantool d500k loaded (500000 rows)
+20:33:51 asan soak start: 20 kamailio processes, PSS 112993 kB
+21:04:13 tarantool d500k loaded (500000 rows)
+21:34:36 tarantool d5k loaded (5000 rows)
+21:47:39 tarantool d5k loaded (5000 rows)
+21:47:40 === phase4 done

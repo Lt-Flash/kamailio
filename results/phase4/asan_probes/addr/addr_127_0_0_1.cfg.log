@@ -1,0 +1,24 @@
+2026-10-03T20:32:57.702854000+10:00  0(1) INFO: ndb_tarantool [tarantool_client.c:226]: tnt_add_server(): registered tarantool server [default] -> 127.0.0.1:13301
+2026-10-03T20:32:57.706848000+10:00  0(1) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+2026-10-03T20:32:57.709798000+10:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-03T20:32:57.710044000+10:00 Listening on 
+2026-10-03T20:32:57.710142000+10:00              udp: 127.0.0.1:5060
+2026-10-03T20:32:57.710222000+10:00 Aliases: 
+2026-10-03T20:32:57.710372000+10:00              udp: localhost:5060
+2026-10-03T20:32:57.710497000+10:00 
+2026-10-03T20:32:57.710581000+10:00  0(1) INFO: <core> [main.c:3339]: main(): current open file limits [soft/hard]: [1048576/1048576]
+2026-10-03T20:32:57.710683000+10:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-03T20:32:57.710764000+10:00  0(1) INFO: sl [sl.c:178]: mod_init(): could not bind tm module - only stateless mode available during modules initialization
+2026-10-03T20:32:57.710842000+10:00  0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:162]: mod_init(): initializing ndb_tarantool module...
+2026-10-03T20:32:57.710914000+10:00  0(1) INFO: <core> [main.c:3410]: main(): processes (at least): 5 - shm size: 67108864 - pkg size: 8388608
+2026-10-03T20:32:57.710981000+10:00  0(1) INFO: <core> [main.c:3433]: main(): tcp main processing threads not enabled
+2026-10-03T20:32:57.713726000+10:00  0(1) INFO: <core> [core/udp_server.c:791]: probe_max_receive_buffer(): SO_RCVBUF is initially 212992 for fd 3
+2026-10-03T20:32:57.713859000+10:00  0(1) INFO: <core> [core/udp_server.c:861]: probe_max_receive_buffer(): SO_RCVBUF is finally 524288 on fd 3
+2026-10-03T20:32:57.713939000+10:00  0(1) INFO: <core> [core/udp_server.c:892]: probe_max_send_buffer(): SO_SNDBUF is initially 212992 for fd 3
+2026-10-03T20:32:57.714044000+10:00  0(1) INFO: <core> [core/udp_server.c:962]: probe_max_send_buffer(): SO_SNDBUF is finally 524288 on fd 3
+2026-10-03T20:32:57.714143000+10:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-03T20:32:57.714220000+10:00  0(1) INFO: sl [sl.c:197]: child_init(): could not bind tm module - only stateless mode available during runtime
+2026-10-03T20:32:57.718370000+10:00  1(2) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-03T20:32:57.720103000+10:00  2(3) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-03T20:32:57.721864000+10:00  3(4) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-03T20:32:57.723393000+10:00  4(5) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301

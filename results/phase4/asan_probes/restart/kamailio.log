@@ -1,0 +1,6 @@
+2026-10-03T20:33:15.897848000+10:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-03T20:33:15.898462000+10:00 Listening on 
+2026-10-03T20:33:15.898581000+10:00              udp: 127.0.0.1 [127.0.0.1]:5060
+2026-10-03T20:33:15.898660000+10:00 Aliases: 
+2026-10-03T20:33:15.898766000+10:00 
+2026-10-03T20:33:15.898876000+10:00  0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file

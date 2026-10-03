@@ -116,9 +116,9 @@ restart) # P11: Tarantool restart under 1k cps of cdr; every answer checked
 	mkdir -p $OUT/restart
 	{ echo SEQUENTIAL; tail -n +2 callers.csv; } > callers_seq.csv
 	kam_start ndbt-kam-bench bench.cfg -A WITH_TNT
-	timeout 60 sipp 127.0.0.1:5060 -sf cdr_check.xml -inf callers_seq.csv -m 200 -r 200 \
+	timeout 60 sipp 127.0.0.1:5060 -sf cdr_check.xml -s cdr -inf callers_seq.csv -m 200 -r 200 \
 		-i 127.0.0.1 -p 15098 -nostdin -trace_logs -log_file $OUT/restart/before.log >/dev/null 2>&1
-	timeout 90 sipp 127.0.0.1:5060 -sf cdr_check.xml -inf callers.csv -m 20000 -r 1000 \
+	timeout 90 sipp 127.0.0.1:5060 -sf cdr_check.xml -s cdr -inf callers.csv -m 20000 -r 1000 \
 		-i 127.0.0.1 -p 15097 -nostdin -trace_logs -log_file $OUT/restart/load.log \
 		-trace_stat -stf $OUT/restart/load_stat.csv >/dev/null 2>&1 &
 	L=$!
@@ -126,7 +126,7 @@ restart) # P11: Tarantool restart under 1k cps of cdr; every answer checked
 	podman restart ndbt-tnt >/dev/null
 	echo "tarantool restarted at $(date +%T)" > $OUT/restart/when.txt
 	wait $L
-	timeout 60 sipp 127.0.0.1:5060 -sf cdr_check.xml -inf callers_seq.csv -m 200 -r 200 \
+	timeout 60 sipp 127.0.0.1:5060 -sf cdr_check.xml -s cdr -inf callers_seq.csv -m 200 -r 200 \
 		-i 127.0.0.1 -p 15098 -nostdin -trace_logs -log_file $OUT/restart/after.log >/dev/null 2>&1
 	klog ndbt-kam-bench > $OUT/restart/kamailio.log
 	kam_stop ndbt-kam-bench

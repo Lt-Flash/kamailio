@@ -1,0 +1,8 @@
+loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+Listening on 
+             udp: 127.0.0.1 [127.0.0.1]:5060
+             udp: SUT_IP [SUT_IP]:5060
+Aliases: 
+
+ 0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file
+ 0(1) NOTICE: <core> [main.c:783]: handle_sigs(): Thank you for flying kamailio!!!

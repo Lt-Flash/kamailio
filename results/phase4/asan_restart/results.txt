@@ -1,0 +1,10 @@
+=== phase1 2026-10-03 21:49:27 AEST stages: restart
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+d199c3961395a3d7eb53e56b4faf8228  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+restart	before	answers=200 correct=200 wrong=0
+restart	load	answers=10243 correct=10243 wrong=0
+restart	after	answers=200 correct=200 wrong=0
+restart	kamailio-errors=8778
+restart	tarantool-ready-again=21:49:36.507
+restart	first-failure=21:49:36.184 last-failure=21:49:45.998 disabled-marks=7
+=== done 21:49:54

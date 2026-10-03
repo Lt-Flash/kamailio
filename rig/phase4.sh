@@ -4,6 +4,8 @@
 # Needs: images ndbt-kam:asan-sys (ASan+UBSan, MEMPKG=sys so pkg_malloc is libc malloc) and
 # ndbt-kam:rel; ndbt-tnt running; GENS remote SIPp generators with gen.sh staged (phase2.sh does it).
 # Output: p4/results.txt + per-stage dirs; sanitizer reports in p4/<stage>/san/.
+# NOTE: Kamailio workers leave with _exit(0) on SIGTERM (core/main.c), which skips
+# LeakSanitizer - leak evidence comes from pkg.stats deltas on the release build.
 set -u
 set -o pipefail
 cd /var/tmp/ndbt
@@ -27,9 +29,11 @@ san_count() {   # dir -> "asan=N ubsan=N leak=N files=N" (reports, not warnings)
 	local d=$1
 	local a u l f
 	f=$(ls $d 2>/dev/null | wc -l)
-	a=$(cat $d/asan.* 2>/dev/null | grep -c 'ERROR: AddressSanitizer')
-	l=$(cat $d/asan.* 2>/dev/null | grep -c 'ERROR: LeakSanitizer')
-	u=$(cat $d/ubsan.* $d/asan.* 2>/dev/null | grep -c 'runtime error:')
+	# ASan/LSan reports can land in ubsan.* files and UBSan reports only on stderr
+	# (the Kamailio log) in a combined build: count across everything.
+	a=$(cat $d/* 2>/dev/null | grep -c 'ERROR: AddressSanitizer')
+	l=$(cat $d/* 2>/dev/null | grep -c 'ERROR: LeakSanitizer')
+	u=$(cat $d/* $d/../kamailio.log $d/../*/kamailio.log 2>/dev/null | grep -c 'runtime error:')
 	echo "asan_errors=$a leak_reports=$l ubsan_errors=$u report_files=$f"
 }
 san_top() {   # first frames that mention the module, for the report
@@ -68,7 +72,9 @@ kam_stop() { podman logs $1 > $2/kamailio.log 2>&1; podman stop -t 30 $1 >/dev/n
 kam_hostpids() { pgrep -f '^kamailio -f /data/bench.cfg' | tr '\n' ' '; }
 pss_kb() { local t=0 p; for p in "$@"; do [ -r /proc/$p/smaps_rollup ] && t=$((t + $(awk '/^Pss:/ {print $2}' /proc/$p/smaps_rollup))); done; echo $t; }
 fds() { local p; for p in "$@"; do echo -n "$(ls /proc/$p/fd 2>/dev/null | wc -l) "; done; }
-pkgstats() { podman exec $1 kamcmd -s unix:/tmp/kamailio_ctl pkg.stats 2>/dev/null | awk '/pid:/ {p=$2} /used:/ {print p, $2}' | sort -n; }
+pkgstats() {   # "pid used" per process (exactly the used: field, not real_used:)
+	podman exec $1 kamcmd -s unix:/tmp/kamailio_ctl pkg.stats 2>/dev/null | awk '$1 == "pid:" {p=$2} $1 == "used:" {print p, $2}' | sort -n
+}
 cdr_check() {   # dir data -> "answers correct wrong" (loopback, from 223)
 	local d=$1 data=$2
 	{ echo SEQUENTIAL; tail -n +2 $data/callers.csv | head -200; } > $d/callers_seq.csv
