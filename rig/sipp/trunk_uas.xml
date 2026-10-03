@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Scenario 3 GROUND TRUTH: one instance per trunk (-p 5071/5072/5073).
+     Logs a monotonic timestamp at answer and at BYE; peak_concurrency.py turns
+     the logs into the true peak number of simultaneous calls on each trunk. -->
+<scenario name="trunk uas">
+  <recv request="INVITE"/>
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[pid]T[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Record-Route:]
+      Contact: <sip:trunk@[local_ip]:[local_port]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <recv request="ACK" crlf="true"/>
+  <nop><action><log message="UP [clock_tick] [call_id]"/></action></nop>
+  <recv request="BYE"/>
+  <nop><action><log message="DOWN [clock_tick] [call_id]"/></action></nop>
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Content-Length: 0
+
+    ]]>
+  </send>
+</scenario>

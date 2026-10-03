@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Scenario 3 load: INVITE sip:lcr@, hold the call HOLD_MS (-d), BYE.
+     503 = all trunks full (expected for the overflow). Kamailio relays to the
+     trunk UAS on 5071/5072/5073. -->
+<scenario name="lcr with trunk limits">
+  <send retrans="500">
+    <![CDATA[
+      INVITE sip:lcr@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:uac@[local_ip]>;tag=[pid]L[call_number]
+      To: <sip:lcr@[remote_ip]>
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: <sip:uac@[local_ip]:[local_port]>
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <recv response="100" optional="true"/>
+  <recv response="503" optional="true" next="full"/>
+  <recv response="486" optional="true" next="rej"/>
+  <recv response="200" rrs="true"/>
+  <send>
+    <![CDATA[
+      ACK [next_url] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      [routes]
+      From: <sip:uac@[local_ip]>;tag=[pid]L[call_number]
+      To: <sip:lcr@[remote_ip]>[peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <pause/>
+  <send retrans="500">
+    <![CDATA[
+      BYE [next_url] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      [routes]
+      From: <sip:uac@[local_ip]>;tag=[pid]L[call_number]
+      To: <sip:lcr@[remote_ip]>[peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 2 BYE
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <recv response="200"/>
+  <nop next="end"/>
+  <label id="full"/>
+  <send>
+    <![CDATA[
+      ACK sip:lcr@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:uac@[local_ip]>;tag=[pid]L[call_number]
+      To: <sip:lcr@[remote_ip]>[peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <nop><action><log message="FULL [call_id]"/></action></nop>
+  <nop next="end"/>
+  <label id="rej"/>
+  <send>
+    <![CDATA[
+      ACK sip:lcr@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:uac@[local_ip]>;tag=[pid]L[call_number]
+      To: <sip:lcr@[remote_ip]>[peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <nop><action><log message="REJ486 [call_id]"/></action></nop>
+  <label id="end"/>
+</scenario>

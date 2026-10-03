@@ -1,0 +1,12 @@
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1188]: tnt_exec_call(): pkg_malloc failed for IPROTO_CALL response body (300039 bytes)
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1348]: tnt_exec_eval(): failed to receive IPROTO_EVAL response header from 127.0.0.1:13301: Connection refused
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1188]: tnt_exec_call(): pkg_malloc failed for IPROTO_CALL response body (400039 bytes)
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1348]: tnt_exec_eval(): failed to receive IPROTO_EVAL response header from 127.0.0.1:13301: Connection refused
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1188]: tnt_exec_call(): pkg_malloc failed for IPROTO_CALL response body (500039 bytes)
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1348]: tnt_exec_eval(): failed to receive IPROTO_EVAL response header from 127.0.0.1:13301: Connection refused
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1188]: tnt_exec_call(): pkg_malloc failed for IPROTO_CALL response body (600039 bytes)
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1348]: tnt_exec_eval(): failed to receive IPROTO_EVAL response header from 127.0.0.1:13301: Connection refused
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1188]: tnt_exec_call(): pkg_malloc failed for IPROTO_CALL response body (700039 bytes)
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1348]: tnt_exec_eval(): failed to receive IPROTO_EVAL response header from 127.0.0.1:13301: Connection refused
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1188]: tnt_exec_call(): pkg_malloc failed for IPROTO_CALL response body (800039 bytes)
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1348]: tnt_exec_eval(): failed to receive IPROTO_EVAL response header from 127.0.0.1:13301: Connection refused

@@ -1,0 +1,30 @@
+loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+Listening on 
+             udp: 127.0.0.1 [127.0.0.1]:5060
+Aliases: 
+
+ 0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file
+ 8(9) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0. 4(5) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0. 7(8) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0. 6(7) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0. 5(6) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+0.1:13301: Resource temporarily unavailable
+0.1:13301: Resource temporarily unavailable
+0.1:13301: Resource temporarily unavailable
+0.1:13301: Resource temporarily unavailable
+ 3(4) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+ 1(2) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0. 2(3) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+0.1:13301: Resource temporarily unavailable
+ 2(3) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource  5(6) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource  1(2) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource  7(8) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource temporarily unavailable
+temporarily unavailable
+temporarily unavailable
+temporarily unavailable
+ 6(7) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource temporarily unavailable
+ 3(4) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource temporarily unavailable
+ 2(3) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 1(2) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 5(6) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 7(8) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+n
+n
+n
+ 6(7) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+ 3(4) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+ 8(9) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource temporarily unavailable
+ 8(9) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+ 4(5) ERROR: ndb_tarantool [tarantool_client.c:563]: tnt_conn_connect(): failed to read greeting from 127.0.0.1:13301: Resource temporarily unavailable
+ 4(5) ERROR: ndb_tarantool [tarantool_client.c:1125]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down

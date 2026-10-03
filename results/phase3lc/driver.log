@@ -1,0 +1,16 @@
+14:07:07 === phase3 start: arms=tnt redis runs=10 calls=120 burst=20ms hold=5000ms; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+14:07:07 arm tnt (-A WITH_TNT)
+14:08:37 arm redis (-A WITH_REDIS)
+14:10:11 === phase3 done
+14:10:11 === phase3 start: arms=tnt redis runs=10 calls=120 burst=20ms hold=5000ms; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+14:10:11 arm tnt (-A WITH_TNT)
+14:12:13 arm redis (-A WITH_REDIS)
+14:14:43 === phase3 done
+14:14:43 === phase3 start: arms=tnt redis runs=5 calls=120 burst=20ms hold=5000ms; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+14:14:43 arm tnt (-A WITH_TNT)
+14:15:30 arm redis (-A WITH_REDIS)
+14:16:19 === phase3 done
+14:16:19 === phase3 start: arms=tnt redis runs=2 calls=120 burst=20ms hold=5000ms; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+14:16:19 arm tnt (-A WITH_TNT)
+14:17:59 arm redis (-A WITH_REDIS)
+14:19:39 === phase3 done

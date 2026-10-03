@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Scenario 1 load: INVITE sip:<-s>@ (cdr | noop | none) from a caller taken from callers.csv
+     (sipp -inf callers.csv). Kamailio answers 480 statelessly after the lookup;
+     response time = SIP RTT incl. one backend round trip. -->
+<scenario name="cdr lookup">
+  <send start_rtd="1">
+    <![CDATA[
+      INVITE sip:[service]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:[field0]@[local_ip]>;tag=[pid]C[call_number]
+      To: <sip:[service]@[remote_ip]>
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: <sip:[field0]@[local_ip]:[local_port]>
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <recv response="480" rtd="1">
+    <action>
+      <ereg regexp="X-R: ([^[:cntrl:]]*)" search_in="msg" check_it="true" assign_to="m,r"/>
+    </action>
+  </recv>
+  <send>
+    <![CDATA[
+      ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:[field0]@[local_ip]>;tag=[pid]C[call_number]
+      To: <sip:[service]@[remote_ip]>[peer_tag_param]
+      Call-ID: [call_id]
+      CSeq: 1 ACK
+      Max-Forwards: 70
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <ResponseTimeRepartition value="1, 2, 5, 10, 20, 50, 100, 500"/>
+  <Reference variables="m,r"/>
+</scenario>

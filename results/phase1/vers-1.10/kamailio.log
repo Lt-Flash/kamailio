@@ -1,0 +1,42 @@
+2026-10-03T01:57:48.406002000+10:00  0(1) INFO: ndb_tarantool [tarantool_client.c:226]: tnt_add_server(): registered tarantool server [default] -> 127.0.0.1:13302
+2026-10-03T01:57:48.406629000+10:00  0(1) INFO: ndb_tarantool [tarantool_client.c:226]: tnt_add_server(): registered tarantool server [short] -> 127.0.0.1:13302
+2026-10-03T01:57:48.406804000+10:00  0(1) INFO: ndb_tarantool [tarantool_client.c:226]: tnt_add_server(): registered tarantool server [dead] -> 127.0.0.1:13399
+2026-10-03T01:57:48.411612000+10:00  0(1) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+2026-10-03T01:57:48.413491000+10:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-03T01:57:48.413623000+10:00 Listening on 
+2026-10-03T01:57:48.413728000+10:00              udp: 127.0.0.1:5060
+2026-10-03T01:57:48.413799000+10:00 Aliases: 
+2026-10-03T01:57:48.413862000+10:00              udp: localhost:5060
+2026-10-03T01:57:48.413924000+10:00 
+2026-10-03T01:57:48.414042000+10:00  0(1) INFO: <core> [main.c:3339]: main(): current open file limits [soft/hard]: [1048576/1048576]
+2026-10-03T01:57:48.414116000+10:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-03T01:57:48.414213000+10:00  0(1) INFO: sl [sl.c:178]: mod_init(): could not bind tm module - only stateless mode available during modules initialization
+2026-10-03T01:57:48.414290000+10:00  0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:162]: mod_init(): initializing ndb_tarantool module...
+2026-10-03T01:57:48.414406000+10:00  0(1) INFO: <core> [main.c:3410]: main(): processes (at least): 5 - shm size: 67108864 - pkg size: 8388608
+2026-10-03T01:57:48.414485000+10:00  0(1) INFO: <core> [main.c:3433]: main(): tcp main processing threads not enabled
+2026-10-03T01:57:48.414565000+10:00  0(1) INFO: <core> [core/udp_server.c:791]: probe_max_receive_buffer(): SO_RCVBUF is initially 212992 for fd 3
+2026-10-03T01:57:48.414634000+10:00  0(1) INFO: <core> [core/udp_server.c:861]: probe_max_receive_buffer(): SO_RCVBUF is finally 524288 on fd 3
+2026-10-03T01:57:48.414715000+10:00  0(1) INFO: <core> [core/udp_server.c:892]: probe_max_send_buffer(): SO_SNDBUF is initially 212992 for fd 3
+2026-10-03T01:57:48.414789000+10:00  0(1) INFO: <core> [core/udp_server.c:962]: probe_max_send_buffer(): SO_SNDBUF is finally 524288 on fd 3
+2026-10-03T01:57:48.414859000+10:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-03T01:57:48.414922000+10:00  0(1) INFO: sl [sl.c:197]: child_init(): could not bind tm module - only stateless mode available during runtime
+2026-10-03T01:57:48.415246000+10:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:555]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-03T01:57:48.415354000+10:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:616]: tnt_child_init(): failed to connect to Tarantool 127.0.0.1:13399 on child init (init_without_tarantool is on)
+2026-10-03T01:57:48.415435000+10:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:555]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-03T01:57:48.415507000+10:00  2(3) WARNING: ndb_tarantool [tarantool_client.c:616]: tnt_child_init(): failed to connect to Tarantool 127.0.0.1:13399 on child init (init_without_tarantool is on)
+2026-10-03T01:57:48.415573000+10:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:555]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-03T01:57:48.415639000+10:00  3(4) WARNING: ndb_tarantool [tarantool_client.c:616]: tnt_child_init(): failed to connect to Tarantool 127.0.0.1:13399 on child init (init_without_tarantool is on)
+2026-10-03T01:57:48.415722000+10:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:555]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-03T01:57:48.415786000+10:00  4(5) WARNING: ndb_tarantool [tarantool_client.c:616]: tnt_child_init(): failed to connect to Tarantool 127.0.0.1:13399 on child init (init_without_tarantool is on)
+2026-10-03T01:57:48.415923000+10:00  1(2) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416164000+10:00  2(3) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416268000+10:00  3(4) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416396000+10:00  4(5) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416600000+10:00  1(2) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416849000+10:00  4(5) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416916000+10:00  3(4) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:48.416984000+10:00  2(3) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302
+2026-10-03T01:57:50.889491000+10:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1238]: tnt_exec_call(): Tarantool call 'echo' error 0x8014: Invalid MsgPack - packet body
+2026-10-03T01:57:51.127342000+10:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1238]: tnt_exec_call(): Tarantool call 'fail' error 0x8020: /data/init.lua:136: deliberate failure
+2026-10-03T01:57:51.795797000+10:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1170]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13302: Resource temporarily unavailable
+2026-10-03T01:57:51.917084000+10:00  1(2) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13302

@@ -1,0 +1,17 @@
+2026-10-02 15:57:45.036 [1] main/101/init.lua C> Tarantool 1.10.15-0-ge14d0b4ea
+2026-10-02 15:57:45.037 [1] main/101/init.lua C> log level 5
+2026-10-02 15:57:45.037 [1] main/101/init.lua I> mapping 1073741824 bytes for memtx tuple arena...
+2026-10-02 15:57:45.037 [1] main/101/init.lua I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2026-10-02 15:57:45.037 [1] main/101/init.lua I> mapping 134217728 bytes for vinyl tuple arena...
+2026-10-02 15:57:45.038 [1] main/101/init.lua I> instance uuid 4281d6dd-518c-4db5-a7ff-def040bb35cf
+2026-10-02 15:57:45.038 [1] iproto/101/main I> binary: bound to 0.0.0.0:13302
+2026-10-02 15:57:45.038 [1] main/101/init.lua I> initializing an empty data directory
+2026-10-02 15:57:45.051 [1] main/101/init.lua I> assigned id 1 to replica 4281d6dd-518c-4db5-a7ff-def040bb35cf
+2026-10-02 15:57:45.051 [1] main/101/init.lua I> cluster uuid 44dff808-bf93-4279-af87-9434c646294f
+2026-10-02 15:57:45.052 [1] snapshot/101/main I> saving snapshot `./00000000000000000000.snap.inprogress'
+2026-10-02 15:57:45.056 [1] snapshot/101/main I> done
+2026-10-02 15:57:45.057 [1] main/101/init.lua I> ready to accept requests
+2026-10-02 15:57:45.057 [1] main/107/checkpoint_daemon I> started
+2026-10-02 15:57:45.057 [1] main/107/checkpoint_daemon I> scheduled the next snapshot at Fri Oct  2 17:35:34 2026
+2026-10-02 15:57:45.059 [1] main C> entering the event loop
+2026-10-02 15:57:50.889 [1] iproto xrow.c:184 E> ER_INVALID_MSGPACK: Invalid MsgPack - packet body

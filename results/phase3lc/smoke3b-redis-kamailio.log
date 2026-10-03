@@ -1,0 +1,78 @@
+loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+Listening on 
+             udp: 127.0.0.1 [127.0.0.1]:5060
+Aliases: 
+
+ 0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file
+ 2(3) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 4(5) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 7(8) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 6(7) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+ 2(3) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 7(8) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 4(5) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 6(7) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+)
+)
+ 2(3) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 6(7) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 7(8) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 4(5) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 8(9) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 8(9) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 8(9) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 3(4) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 3(4) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 3(4) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 5(6) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 5(6) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 5(6) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 1(2) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 1(2) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 1(2) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 8(9) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 4(5) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 7(8) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 2(3) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+ 8(9) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/099/0): Resource temporarily unavailable
+)
+ 4(5) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 7(8) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 2(3) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+)
+ 8(9) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+)
+ 4(5) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 2(3) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 7(8) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 5(6) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 5(6) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 5(6) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 1(2) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 1(2) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 1(2) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 6(7) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 3(4) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 6(7) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/099/0): Resource temporarily unavailable
+)
+ 3(4) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 6(7) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 3(4) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 3(4) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 7(8) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 4(5) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 8(9) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:163 6(7) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+99/0): Resource temporarily unavailable
+ 8(9) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 4(5) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 3(4) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0 6(7) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+)
+)
+ 7(8) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+)
+ 3(4) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 8(9) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 7(8) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 6(7) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 4(5) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 5(6) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 5(6) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 5(6) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 2(3) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 2(3) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 2(3) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r
+ 1(2) ERROR: ndb_redis [redis_client.c:823]: redisc_reconnect_server(): error communicating with redis server [r] (127.0.0.1:16399/0): Resource temporarily unavailable
+ 1(2) ERROR: ndb_redis [redis_client.c:832]: redisc_reconnect_server(): failed to connect to redis server [r] (127.0.0.1:16399/0)
+ 1(2) ERROR: ndb_redis [redis_client.c:1236]: redisc_exec(): unable to reconnect to redis server: r

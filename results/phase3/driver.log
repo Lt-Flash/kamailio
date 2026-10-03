@@ -1,0 +1,6 @@
+13:42:53 === phase3 start: arms=tnt redis naive yield runs=20 calls=120 burst=20ms hold=5000ms; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+13:42:53 arm tnt (-A WITH_TNT)
+13:45:31 arm redis (-A WITH_REDIS)
+13:48:14 arm naive (-A WITH_REDIS_NAIVE)
+13:50:57 arm yield (-A WITH_TNT -A TNT_YIELD)
+13:53:35 === phase3 done

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Variant 3a: rejects ~10 % of INVITEs with 486 (uniform sample), otherwise identical to trunk_uas.xml.
+     Scenario 3 GROUND TRUTH: one instance per trunk (-p 5071/5072/5073).
+     Logs a monotonic timestamp at answer and at BYE; peak_concurrency.py turns
+     the logs into the true peak number of simultaneous calls on each trunk. -->
+<scenario name="trunk uas 486">
+  <recv request="INVITE">
+    <action>
+      <sample assign_to="u" distribution="uniform" min="0" max="1"/>
+      <test assign_to="rej" variable="u" compare="less_than" value="0.1"/>
+    </action>
+  </recv>
+  <nop next="reject" test="rej"/>
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[pid]T[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      [last_Record-Route:]
+      Contact: <sip:trunk@[local_ip]:[local_port]>
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <recv request="ACK" crlf="true"/>
+  <nop><action><log message="UP [clock_tick] [call_id]"/></action></nop>
+  <recv request="BYE"/>
+  <nop><action><log message="DOWN [clock_tick] [call_id]"/></action></nop>
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <nop next="end"/>
+  <label id="reject"/>
+  <send>
+    <![CDATA[
+      SIP/2.0 486 Busy Here
+      [last_Via:]
+      [last_From:]
+      [last_To:];tag=[pid]R[call_number]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <nop><action><log message="REJ [clock_tick] [call_id]"/></action></nop>
+  <recv request="ACK"/>
+  <label id="end"/>
+</scenario>

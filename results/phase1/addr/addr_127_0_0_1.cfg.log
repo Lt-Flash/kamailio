@@ -1,0 +1,24 @@
+ 0(1) INFO: ndb_tarantool [tarantool_client.c:226]: tnt_add_server(): registered tarantool server [default] -> 127.0.0.1:13301
+ 0(1) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+Listening on 
+             udp: 127.0.0.1:5060
+Aliases: 
+             udp: localhost:5060
+
+ 0(1) INFO: <core> [main.c:3339]: main(): current open file limits [soft/hard]: [1048576/1048576]
+ 0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+ 0(1) INFO: sl [sl.c:178]: mod_init(): could not bind tm module - only stateless mode available during modules initialization
+ 0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:162]: mod_init(): initializing ndb_tarantool module...
+ 0(1) INFO: <core> [main.c:3410]: main(): processes (at least): 5 - shm size: 67108864 - pkg size: 8388608
+ 0(1) INFO: <core> [main.c:3433]: main(): tcp main processing threads not enabled
+ 0(1) INFO: <core> [core/udp_server.c:791]: probe_max_receive_buffer(): SO_RCVBUF is initially 212992 for fd 3
+ 0(1) INFO: <core> [core/udp_server.c:861]: probe_max_receive_buffer(): SO_RCVBUF is finally 524288 on fd 3
+ 0(1) INFO: <core> [core/udp_server.c:892]: probe_max_send_buffer(): SO_SNDBUF is initially 212992 for fd 3
+ 0(1) INFO: <core> [core/udp_server.c:962]: probe_max_send_buffer(): SO_SNDBUF is finally 524288 on fd 3
+ 0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+ 0(1) INFO: sl [sl.c:197]: child_init(): could not bind tm module - only stateless mode available during runtime
+ 1(2) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+ 3(4) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+ 2(3) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+ 4(5) INFO: ndb_tarantool [tarantool_client.c:460]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301

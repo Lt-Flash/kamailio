@@ -1,0 +1,5 @@
+ 1(2) ERROR: <core> [core/mem/q_malloc.c:787]: qm_realloc(): qm_realloc(0x7a2fbaf0a010, 524288) called from ndb_tarantool: tarantool_client.c: tnt_buf_append(67
+ 1(2) ERROR: <core> [core/mem/q_malloc.c:787]: qm_realloc(): qm_realloc(0x7a2fbaf0a010, 524288) called from ndb_tarantool: tarantool_client.c: tnt_buf_append(67
+ 1(2) ERROR: <core> [core/mem/q_malloc.c:787]: qm_realloc(): qm_realloc(0x7a2fbaf0a010, 524288) called from ndb_tarantool: tarantool_client.c: tnt_buf_append(67
+ 1(2) ERROR: <core> [core/mem/q_malloc.c:787]: qm_realloc(): qm_realloc(0x7a2fbaf0a010, 262144) called from ndb_tarantool: tarantool_client.c: tnt_buf_append(67
+ 1(2) ERROR: <core> [core/mem/q_malloc.c:787]: qm_realloc(): qm_realloc(0x7a2fbaf0a010, 131072) called from ndb_tarantool: tarantool_client.c: tnt_buf_append(67

@@ -1,0 +1,153 @@
+=== phase1 2026-10-03 01:52:46 AEST stages: basic
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+basic	p_types	115ms	p_types cid=0123abc@h rc=1 r=[[["number", 123]]]
+basic	p_inject	111ms	p_inject cid=x","injected rc=1 r=[[["string", "x"], ["string", "injected"]]]
+basic	p_unicode	111ms	p_unicode cid=u1@h rc=1 r=[[["string", ""]]]
+basic	p_badjson	110ms	p_badjson cid=b1@h rc=-1 r=
+basic	p_after	110ms	p_after cid=b2@h rc=1 r=["after"]
+basic	p_badjson2	111ms	p_badjson2 cid=b3@h rc=1 r=[[["number", 1]]]
+basic	p_after	111ms	p_after cid=b4@h rc=1 r=["after"]
+basic	p_err	112ms	p_err cid=e1@h rc=-1 r=
+basic	p_nil	112ms	p_nil cid=e2@h rc=1 r=[null]
+basic	p_multi	111ms	p_multi cid=e3@h rc=1 r=[1, "two", [3]]
+=== done 01:52:50
+=== phase1 2026-10-03 01:52:59 AEST stages: slow
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+slow	p_slow	418ms	p_slow cid=s1@h rc=-1 r=
+slow	p_slow	413ms	p_slow cid=s2@h rc=-1 r=
+slow	p_slow	414ms	p_slow cid=s3@h rc=-1 r=
+slow	p_slow	414ms	p_slow cid=s4@h rc=-1 r=
+slow	p_slow	414ms	p_slow cid=s5@h rc=-1 r=
+slow	p_slow	413ms	p_slow cid=s6@h rc=-1 r=
+slow	p_short_ok	113ms	p_short_ok cid=sok@h rc=1 r=["ok"]
+slow	p_dead	110ms	p_dead cid=d1@h rc=-1 r=
+slow	p_dead	111ms	p_dead cid=d2@h rc=-1 r=
+slow	p_dead	112ms	p_dead cid=d3@h rc=-1 r=
+slow	p_dead	111ms	p_dead cid=d4@h rc=-1 r=
+slow	p_dead	111ms	p_dead cid=d5@h rc=-1 r=
+slow	marked-disabled(short:13301)	0 (recounted)
+slow	recv-failures(short:13301)	6
+slow	marked-disabled(dead:13399)	1 (recounted: grep order fixed)
+slow	connect-attempts(dead:13399)	6
+=== done 01:53:06
+=== phase1 2026-10-03 01:53:32 AEST stages: big
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+big-M8	p_big	128ms	p_big cid=g1@h rc=1 r=900004
+big-M8	p_seq_a	113ms	p_seq_a cid=g2@h rc=1 r=["a"]
+big-M8	p_seq_b	113ms	p_seq_b cid=g3@h rc=1 r=["b"]
+big-M8	p_huge	114ms	p_huge cid=g4@h rc=-1 r=0
+big-M8	p_seq_a	112ms	p_seq_a cid=g5@h rc=1 r=["a"]
+big-M8	p_seq_b	111ms	p_seq_b cid=g6@h rc=1 r=["b"]
+big-M2	p_big	115ms	p_big cid=g1@h rc=-1 r=0
+big-M2	p_seq_a	111ms	p_seq_a cid=g2@h rc=-1 r=
+big-M2	p_seq_b	111ms	p_seq_b cid=g3@h rc=1 r=["b"]
+big-M2	p_huge	112ms	p_huge cid=g4@h rc=-1 r=0
+big-M2	p_seq_a	111ms	p_seq_a cid=g5@h rc=1 r=["a"]
+big-M2	p_seq_b	110ms	p_seq_b cid=g6@h rc=1 r=["b"]
+=== done 01:53:39
+bigx-M2	300000	p_bigx	p_bigx cid=300000 rc=-1 r=0
+bigx-M2	300000	p_seq_a	p_seq_a cid=after300000 rc=-1 r=
+bigx-M2	400000	p_bigx	p_bigx cid=400000 rc=-1 r=0
+bigx-M2	400000	p_seq_a	p_seq_a cid=after400000 rc=-1 r=
+bigx-M2	500000	p_bigx	p_bigx cid=500000 rc=-1 r=0
+bigx-M2	500000	p_seq_a	p_seq_a cid=after500000 rc=-1 r=
+bigx-M2	600000	p_bigx	p_bigx cid=600000 rc=-1 r=0
+bigx-M2	600000	p_seq_a	p_seq_a cid=after600000 rc=-1 r=
+bigx-M2	700000	p_bigx	p_bigx cid=700000 rc=-1 r=0
+bigx-M2	700000	p_seq_a	p_seq_a cid=after700000 rc=-1 r=
+bigx-M2	800000	p_bigx	p_bigx cid=800000 rc=-1 r=0
+bigx-M2	800000	p_seq_a	p_seq_a cid=after800000 rc=-1 r=
+bigx-M3	300000	p_bigx	p_bigx cid=300000 rc=1 r=300004
+bigx-M3	300000	p_seq_a	p_seq_a cid=after300000 rc=1 r=["a"]
+bigx-M3	400000	p_bigx	p_bigx cid=400000 rc=1 r=400004
+bigx-M3	400000	p_seq_a	p_seq_a cid=after400000 rc=1 r=["a"]
+bigx-M3	500000	p_bigx	p_bigx cid=500000 rc=1 r=500004
+bigx-M3	500000	p_seq_a	p_seq_a cid=after500000 rc=1 r=["a"]
+bigx-M3	600000	p_bigx	p_bigx cid=600000 rc=1 r=2
+bigx-M3	600000	p_seq_a	p_seq_a cid=after600000 rc=1 r=["a"]
+bigx-M3	700000	p_bigx	p_bigx cid=700000 rc=1 r=2
+bigx-M3	700000	p_seq_a	p_seq_a cid=after700000 rc=1 r=["a"]
+bigx-M3	800000	p_bigx	p_bigx cid=800000 rc=1 r=2
+bigx-M3	800000	p_seq_a	p_seq_a cid=after800000 rc=1 r=["a"]
+bigx-M3	900000	p_bigx	p_bigx cid=900000 rc=1 r=2
+bigx-M3	900000	p_seq_a	p_seq_a cid=after900000 rc=1 r=["a"]
+bigx-M3	1000000	p_bigx	p_bigx cid=1000000 rc=1 r=2
+bigx-M3	1000000	p_seq_a	p_seq_a cid=after1000000 rc=1 r=["a"]
+bigx-M4	300000	p_bigx	p_bigx cid=300000 rc=1 r=300004
+bigx-M4	300000	p_seq_a	p_seq_a cid=after300000 rc=1 r=["a"]
+bigx-M4	400000	p_bigx	p_bigx cid=400000 rc=1 r=400004
+bigx-M4	400000	p_seq_a	p_seq_a cid=after400000 rc=1 r=["a"]
+bigx-M4	500000	p_bigx	p_bigx cid=500000 rc=1 r=500004
+bigx-M4	500000	p_seq_a	p_seq_a cid=after500000 rc=1 r=["a"]
+bigx-M4	600000	p_bigx	p_bigx cid=600000 rc=1 r=600004
+bigx-M4	600000	p_seq_a	p_seq_a cid=after600000 rc=1 r=["a"]
+bigx-M4	700000	p_bigx	p_bigx cid=700000 rc=1 r=700004
+bigx-M4	700000	p_seq_a	p_seq_a cid=after700000 rc=1 r=["a"]
+bigx-M4	800000	p_bigx	p_bigx cid=800000 rc=1 r=800004
+bigx-M4	800000	p_seq_a	p_seq_a cid=after800000 rc=1 r=["a"]
+bigx-M4	900000	p_bigx	p_bigx cid=900000 rc=1 r=900004
+bigx-M4	900000	p_seq_a	p_seq_a cid=after900000 rc=1 r=["a"]
+bigx-M4	1000000	p_bigx	p_bigx cid=1000000 rc=1 r=1000004
+bigx-M4	1000000	p_seq_a	p_seq_a cid=after1000000 rc=1 r=["a"]
+=== phase1 2026-10-03 01:54:43 AEST stages: addr conns
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+addr	127.0.0.1	container=running	
+addr	localhost	container=exited	 1(2) ERROR: ndb_tarantool [tarantool_client.c:549]: tnt_conn_connect(): invalid IPv4 address: localhost
+addr	::1	container=exited	 1(2) ERROR: ndb_tarantool [tarantool_client.c:549]: tnt_conn_connect(): invalid IPv4 address: ::1
+conns	kamailio-processes=12	established-to-13301=11
+=== done 01:55:02
+=== phase1 2026-10-03 01:55:10 AEST stages: restart
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+restart	before	answers=200 correct=200 wrong=0
+restart	load	answers=10055 correct=10055 wrong=0
+restart	after	answers=200 correct=200 wrong=0
+restart	kamailio-errors=8836
+=== done 01:55:43
+=== phase1 2026-10-03 01:56:13 AEST stages: restart
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+restart	before	answers=200 correct=200 wrong=0
+restart	load	answers=10187 correct=10187 wrong=0
+restart	after	answers=200 correct=200 wrong=0
+restart	kamailio-errors=8804
+restart	tarantool-ready-again=01:56:22.437
+restart	first-failure=01:56:22.146 last-failure=01:56:31.999 disabled-marks=8
+=== done 01:56:39
+=== phase1 2026-10-03 01:57:33 AEST stages: vers
+abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README
+93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+vers-2.11	tarantool=running	
+vers-2.11	p_types	115ms	p_types cid=v-p_types@h rc=1 r=[[["string", "v-p_types@h"]]]
+vers-2.11	p_inject	111ms	p_inject cid=v-p_inject@h rc=1 r=[[["string", "v-p_inject@h"]]]
+vers-2.11	p_unicode	111ms	p_unicode cid=v-p_unicode@h rc=1 r=[[["string", ""]]]
+vers-2.11	p_badjson	111ms	p_badjson cid=v-p_badjson@h rc=-1 r=
+vers-2.11	p_after	111ms	p_after cid=v-p_after@h rc=1 r=["after"]
+vers-2.11	p_err	111ms	p_err cid=v-p_err@h rc=-1 r=
+vers-2.11	p_nil	111ms	p_nil cid=v-p_nil@h rc=1 r=[null]
+vers-2.11	p_multi	109ms	p_multi cid=v-p_multi@h rc=1 r=[1, "two", [3]]
+vers-2.11	p_slow	419ms	p_slow cid=v-p_slow@h rc=-1 r=
+vers-2.11	p_short_ok	113ms	p_short_ok cid=v-p_short_ok@h rc=1 r=["ok"]
+vers-2.11	p_big	123ms	p_big cid=v-p_big@h rc=1 r=900004
+vers-2.11	p_seq_a	111ms	p_seq_a cid=v-p_seq_a@h rc=1 r=["a"]
+vers-1.10	tarantool=running	
+vers-1.10	p_types	112ms	p_types cid=v-p_types@h rc=1 r=[[["string", "v-p_types@h"]]]
+vers-1.10	p_inject	111ms	p_inject cid=v-p_inject@h rc=1 r=[[["string", "v-p_inject@h"]]]
+vers-1.10	p_unicode	112ms	p_unicode cid=v-p_unicode@h rc=1 r=[[["string", ""]]]
+vers-1.10	p_badjson	112ms	p_badjson cid=v-p_badjson@h rc=-1 r=
+vers-1.10	p_after	110ms	p_after cid=v-p_after@h rc=1 r=["after"]
+vers-1.10	p_err	111ms	p_err cid=v-p_err@h rc=-1 r=
+vers-1.10	p_nil	110ms	p_nil cid=v-p_nil@h rc=1 r=[null]
+vers-1.10	p_multi	112ms	p_multi cid=v-p_multi@h rc=1 r=[1, "two", [3]]
+vers-1.10	p_slow	418ms	p_slow cid=v-p_slow@h rc=-1 r=
+vers-1.10	p_short_ok	111ms	p_short_ok cid=v-p_short_ok@h rc=1 r=["ok"]
+vers-1.10	p_big	126ms	p_big cid=v-p_big@h rc=1 r=900004
+vers-1.10	p_seq_a	112ms	p_seq_a cid=v-p_seq_a@h rc=1 r=["a"]
+=== done 01:57:55
+badpass-3	p_after cid=bad-3@h rc=-1 r=	authentication failed for user 'kam' on 127.0.0.1:13301
+badpass-2.11	p_after cid=bad-2.11@h rc=-1 r=	authentication failed for user 'kam' on 127.0.0.1:13302
+badpass-1.10	p_after cid=bad-1.10@h rc=-1 r=	authentication failed for user 'kam' on 127.0.0.1:13302

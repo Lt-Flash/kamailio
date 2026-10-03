@@ -1,0 +1,13 @@
+PID         COMMAND
+1           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+2           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+3           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+4           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+5           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+6           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+7           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+8           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+9           kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+10          kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+11          kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 
+12          kamailio -f /data/bench.cfg -DD -E -A WITH_TNT 

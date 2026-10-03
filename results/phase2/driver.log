@@ -1,0 +1,35 @@
+02:14:13 === phase2 quick pass start; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+02:14:13 loading dataset d5k
+errors: 0, replies: 15000
+02:14:18 tarantool rows=5000 redis keys=5201 ft docs=5000
+02:14:18 arm S0 none (-A WITH_TNT, none)
+02:18:05 arm S0 tnt (-A WITH_TNT, noop)
+02:21:50 arm S0 redis (-A WITH_REDIS, noop)
+02:25:35 arm S1a tnt (-A WITH_TNT, cdr)
+02:28:37 arm S1a redis (-A WITH_REDIS, cdr)
+02:32:22 arm S1a redis_ft (-A WITH_REDIS_FT, cdr)
+02:35:23 arm S1a redis_scan (-A WITH_REDIS_SCAN, cdr)
+02:37:11 loading dataset d500k
+errors: 0, replies: 1500000
+02:41:32 tarantool rows= redis keys=520001 ft docs=500000
+02:41:32 arm S1b tnt (-A WITH_TNT, cdr)
+02:43:09 arm S1b redis (-A WITH_REDIS, cdr)
+02:46:54 arm S1b redis_ft (-A WITH_REDIS_FT, cdr)
+02:49:58 arm S1b redis_scan (-A WITH_REDIS_SCAN, cdr)
+02:51:19 loading dataset d5k
+errors: 0, replies: 15000
+02:51:26 tarantool rows=5000 redis keys=5201 ft docs=5000
+02:51:26 === phase2 quick pass done
+02:54:07 === phase2 quick pass start; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+02:54:07 loading dataset d5k
+errors: 0, replies: 15000
+02:54:12 tarantool rows=5000 redis keys=5201 ft docs=5000
+02:54:12 loading dataset d500k
+errors: 0, replies: 1500000
+02:54:28 tarantool rows=500000 redis keys=520001 ft docs=500000
+02:54:28 arm S1b tnt (-A WITH_TNT, cdr)
+02:57:28 arm S1b redis_scan (-A WITH_REDIS_SCAN, cdr)
+02:57:53 loading dataset d5k
+errors: 0, replies: 15000
+02:57:58 tarantool rows=5000 redis keys=5201 ft docs=5000
+02:57:58 === S1b re-run done

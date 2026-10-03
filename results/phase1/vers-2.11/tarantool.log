@@ -1,0 +1,23 @@
+2026-10-02 15:57:34.055 [1] main/103/init.lua I> Tarantool 2.11.5-0-g12a9ceb870 Linux-x86_64-RelWithDebInfo
+2026-10-02 15:57:34.055 [1] main/103/init.lua I> log level 5
+2026-10-02 15:57:34.055 [1] main/103/init.lua I> wal/engine cleanup is paused
+2026-10-02 15:57:34.055 [1] main/103/init.lua I> mapping 1073741824 bytes for memtx tuple arena...
+2026-10-02 15:57:34.055 [1] main/103/init.lua I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2026-10-02 15:57:34.055 [1] main/103/init.lua I> mapping 134217728 bytes for vinyl tuple arena...
+2026-10-02 15:57:34.066 [1] main/103/init.lua I> update replication_synchro_quorum = 1
+2026-10-02 15:57:34.066 [1] main/103/init.lua I> instance uuid 02373167-2417-47c2-a497-740008b90876
+2026-10-02 15:57:34.067 [1] main/103/init.lua I> tx_binary: bound to 0.0.0.0:13302
+2026-10-02 15:57:34.067 [1] main/103/init.lua I> initializing an empty data directory
+2026-10-02 15:57:34.081 [1] main/103/init.lua I> assigned id 1 to replica 02373167-2417-47c2-a497-740008b90876
+2026-10-02 15:57:34.082 [1] main/103/init.lua I> update replication_synchro_quorum = 1
+2026-10-02 15:57:34.082 [1] main/103/init.lua I> cluster uuid 00510703-66b8-4baf-b303-abc6c5d7584b
+2026-10-02 15:57:34.083 [1] snapshot/101/main I> saving snapshot `./00000000000000000000.snap.inprogress'
+2026-10-02 15:57:34.088 [1] snapshot/101/main I> done
+2026-10-02 15:57:34.091 [1] main/103/init.lua I> ready to accept requests
+2026-10-02 15:57:34.091 [1] main/104/gc I> wal/engine cleanup is resumed
+2026-10-02 15:57:34.095 [1] main/103/init.lua/box.load_cfg I> set 'readahead' configuration option to 1048576
+2026-10-02 15:57:34.095 [1] main/103/init.lua/box.load_cfg I> set 'memtx_memory' configuration option to 1073741824
+2026-10-02 15:57:34.095 [1] main/103/init.lua/box.load_cfg I> set 'listen' configuration option to 13302
+2026-10-02 15:57:34.099 [1] main/105/checkpoint_daemon I> scheduled next checkpoint for Fri Oct  2 17:39:56 2026
+2026-10-02 15:57:34.099 [1] main I> entering the event loop
+2026-10-02 15:57:39.955 [1] iproto xrow.c:260 E> ER_INVALID_MSGPACK: Invalid MsgPack - packet body

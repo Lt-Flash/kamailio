@@ -1,0 +1,49 @@
+=== 2026-10-03 02:14:13 AEST quick pass, STEP_S=40
+S0	none	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=184.8	be_cpu_ms/1k=3.6	win_calls=24947	sipp_alive=11	PASS
+S0	none	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=161.9	be_cpu_ms/1k=1.4	win_calls=49608	sipp_alive=11	PASS
+S0	none	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=130.4	be_cpu_ms/1k=0.7	win_calls=121856	sipp_alive=11	PASS
+S0	none	10000	offered=400000	ok=399913	fail=87	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=115.5	be_cpu_ms/1k=0.3	win_calls=244049	sipp_alive=11	PASS
+S0	none	20000	offered=800000	ok=463140	fail=336860	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=144.5	be_cpu_ms/1k=0.3	win_calls=289341	sipp_alive=11	FAIL
+S0	tnt	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=254.0	be_cpu_ms/1k=83.3	win_calls=24729	sipp_alive=11	PASS
+S0	tnt	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=228.6	be_cpu_ms/1k=54.5	win_calls=49354	sipp_alive=11	PASS
+S0	tnt	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=189.7	be_cpu_ms/1k=45.4	win_calls=124138	sipp_alive=11	PASS
+S0	tnt	10000	offered=400000	ok=399931	fail=69	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=171.1	be_cpu_ms/1k=45.3	win_calls=245593	sipp_alive=11	PASS
+S0	tnt	20000	offered=800000	ok=571812	fail=228188	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=206.5	be_cpu_ms/1k=60.4	win_calls=357333	sipp_alive=11	FAIL
+S0	redis	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=242.5	be_cpu_ms/1k=74.5	win_calls=24823	sipp_alive=11	PASS
+S0	redis	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=220.5	be_cpu_ms/1k=44.9	win_calls=49252	sipp_alive=11	PASS
+S0	redis	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=183.5	be_cpu_ms/1k=39.2	win_calls=123962	sipp_alive=11	PASS
+S0	redis	10000	offered=400000	ok=399825	fail=175	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=165.9	be_cpu_ms/1k=36.5	win_calls=244977	sipp_alive=11	PASS
+S0	redis	20000	offered=800000	ok=516577	fail=283423	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=225.5	be_cpu_ms/1k=53.8	win_calls=298465	sipp_alive=11	FAIL
+S1a	tnt	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=261.8	be_cpu_ms/1k=136.5	win_calls=24832	sipp_alive=11	PASS
+S1a	tnt	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=241.3	be_cpu_ms/1k=101.3	win_calls=49644	sipp_alive=11	PASS
+S1a	tnt	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=198.0	be_cpu_ms/1k=82.5	win_calls=123093	sipp_alive=11	PASS
+S1a	tnt	10000	offered=400000	ok=398889	fail=1111	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=175.0	be_cpu_ms/1k=75.5	win_calls=243416	sipp_alive=11	FAIL
+S1a	redis	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=246.1	be_cpu_ms/1k=90.9	win_calls=24749	sipp_alive=11	PASS
+S1a	redis	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=225.8	be_cpu_ms/1k=60.3	win_calls=49458	sipp_alive=11	PASS
+S1a	redis	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=190.4	be_cpu_ms/1k=50.9	win_calls=122917	sipp_alive=11	PASS
+S1a	redis	10000	offered=400000	ok=399794	fail=206	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=168.2	be_cpu_ms/1k=47.4	win_calls=244148	sipp_alive=11	PASS
+S1a	redis	20000	offered=800000	ok=404601	fail=395399	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=267.2	be_cpu_ms/1k=86.8	win_calls=248457	sipp_alive=11	FAIL
+S1a	redis_ft	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=257.9	be_cpu_ms/1k=235.0	win_calls=24935	sipp_alive=11	PASS
+S1a	redis_ft	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=236.9	be_cpu_ms/1k=185.3	win_calls=49764	sipp_alive=11	PASS
+S1a	redis_ft	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=194.0	be_cpu_ms/1k=151.7	win_calls=123131	sipp_alive=11	PASS
+S1a	redis_ft	10000	offered=400000	ok=379912	fail=20088	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=163.4	be_cpu_ms/1k=147.7	win_calls=235133	sipp_alive=11	FAIL
+S1a	redis_scan	100	offered=4000	ok=3996	fail=4	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=254.5	be_cpu_ms/1k=9861.2	win_calls=2593	sipp_alive=11	PASS
+S1a	redis_scan	200	offered=8000	ok=4851	fail=3149	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=267.0	be_cpu_ms/1k=10038.7	win_calls=2584	sipp_alive=11	FAIL
+S1b	tnt	1000	offered=40000	ok=0	fail=40000	p50=nan	p99=nan	p999=nan	kam_cpu_ms/1k=nan	be_cpu_ms/1k=nan	win_calls=0	sipp_alive=11	FAIL
+S1b	redis	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=250.9	be_cpu_ms/1k=97.0	win_calls=24749	sipp_alive=11	PASS
+S1b	redis	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=224.3	be_cpu_ms/1k=62.6	win_calls=49535	sipp_alive=11	PASS
+S1b	redis	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=187.2	be_cpu_ms/1k=52.5	win_calls=123474	sipp_alive=11	PASS
+S1b	redis	10000	offered=400000	ok=399608	fail=392	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=168.7	be_cpu_ms/1k=53.5	win_calls=244459	sipp_alive=11	PASS
+S1b	redis	20000	offered=800000	ok=331338	fail=468662	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=328.1	be_cpu_ms/1k=119.4	win_calls=196240	sipp_alive=11	FAIL
+S1b	redis_ft	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=257.3	be_cpu_ms/1k=275.3	win_calls=24994	sipp_alive=11	PASS
+S1b	redis_ft	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=237.1	be_cpu_ms/1k=219.4	win_calls=49771	sipp_alive=11	PASS
+S1b	redis_ft	5000	offered=200000	ok=199980	fail=20	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=192.0	be_cpu_ms/1k=207.4	win_calls=123074	sipp_alive=11	PASS
+S1b	redis_ft	10000	offered=400000	ok=289602	fail=110398	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=168.6	be_cpu_ms/1k=207.5	win_calls=178661	sipp_alive=11	FAIL
+S1b	redis_scan	1	offered=40	ok=0	fail=40	p50=nan	p99=nan	p999=nan	kam_cpu_ms/1k=nan	be_cpu_ms/1k=nan	win_calls=0	sipp_alive=11	FAIL
+=== 2026-10-03 02:54:07 S1b re-run (loader fiber-slice fix, gate enforced)
+=== 2026-10-03 02:54:07 AEST quick pass, STEP_S=40
+S1b	tnt	1000	offered=40000	ok=40000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=268.0	be_cpu_ms/1k=153.9	win_calls=24891	sipp_alive=11	PASS
+S1b	tnt	2000	offered=80000	ok=80000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=246.6	be_cpu_ms/1k=114.6	win_calls=49844	sipp_alive=11	PASS
+S1b	tnt	5000	offered=200000	ok=200000	fail=0	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=200.6	be_cpu_ms/1k=91.9	win_calls=122967	sipp_alive=11	PASS
+S1b	tnt	10000	offered=400000	ok=398707	fail=1293	p50=1.000	p99=1.000	p999=1.000	kam_cpu_ms/1k=173.4	be_cpu_ms/1k=85.2	win_calls=244061	sipp_alive=11	FAIL
+S1b	redis_scan	GATE-FAILED	answers=0/20 correct=0 wrong=0
