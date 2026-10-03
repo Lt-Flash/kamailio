@@ -7,6 +7,12 @@ Backends were Tarantool 3.8.1, 2.11.5 and 1.10.15, and Redis 8.10.1 for the comp
 SIPp drove all traffic through Kamailio, on one host over loopback, with CPU pinning.
 Tests ran on 2026-10-02/03.
 
+**Conclusion:** see the [final comment on the PR](https://github.com/kamailio/kamailio/pull/4913#issuecomment-5970209309). In short:
+- These workloads gave no strong reason to move from Redis to Tarantool.
+- Two good fits: a provider whose billing, CDR and other data already live in Tarantool, and lookups that need a general secondary index.
+- The module works and could be useful once B1–B14 and L1–L2 are fixed.
+- The PR's latency and throughput speed-ups could not be reproduced. The PR's comparison assumes Redis is used in a way it isn't designed for; used as intended, as here, Redis was on par or faster.
+
 ## Phases
 
 | # | Report | What was tested | Outcome |
