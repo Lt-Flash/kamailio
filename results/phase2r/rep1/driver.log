@@ -1,0 +1,24 @@
+18:09:40 loading dataset d5k
+errors: 0, replies: 15000
+18:09:45 tarantool rows=5000 redis keys=5201 ft docs=5000
+18:09:45 arm S0 tnt (-A WITH_TNT, noop)
+18:09:48 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:14:15 arm S0 redis (-A WITH_REDIS, noop)
+18:14:18 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:20:10 arm S0 none (-A WITH_TNT, none)
+18:20:13 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:28:13 arm S1a redis (-A WITH_REDIS, cdr)
+18:28:16 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:34:52 arm S1a redis_ft (-A WITH_REDIS_FT, cdr)
+18:34:55 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:36:31 arm S1a tnt (-A WITH_TNT, cdr)
+18:36:34 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:40:18 loading dataset d500k
+errors: 0, replies: 1500000
+18:40:34 tarantool rows=500000 redis keys=520001 ft docs=500000
+18:40:34 arm S1b redis (-A WITH_REDIS, cdr)
+18:40:37 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:47:15 arm S1b redis_ft (-A WITH_REDIS_FT, cdr)
+18:47:18 kamailio 5060 sockets: rb16777216,t0,tb16777216 
+18:48:56 arm S1b tnt (-A WITH_TNT, cdr)
+18:49:00 kamailio 5060 sockets: rb16777216,t0,tb16777216 

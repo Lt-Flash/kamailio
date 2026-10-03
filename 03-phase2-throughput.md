@@ -1,5 +1,7 @@
 ### Phase 2 (quick pass): CDR lookup throughput, `ndb_tarantool` vs `ndb_redis`
 
+> **Update:** the throughput ceilings in this one-repeat pass were limited by the rig (UDP receive-buffer overflow on the load host). See [06-phase2-repeats.md](06-phase2-repeats.md) for 3 repeats with the rig out of the way. The CPU-per-lookup figures here still agree with the repeats.
+
 These are the first throughput results. This is **one repeat**, so please treat it as preliminary; repeats are below under next steps.
 
 **Winner (preliminary)**

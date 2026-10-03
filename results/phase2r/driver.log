@@ -1,0 +1,17 @@
+18:09:31 sysctl local: net.core.rmem_max=8388608 net.core.rmem_default=212992 net.core.wmem_max=8388608 net.core.wmem_default=212992 -> 16777216
+18:09:32 sysctl GEN_A: net.core.rmem_max=8388608 net.core.rmem_default=212992 net.core.wmem_max=16777216 net.core.wmem_default=212992 -> 16777216
+18:09:32 sysctl GEN_B: net.core.rmem_max=8388608 net.core.rmem_default=212992 net.core.wmem_max=8388608 net.core.wmem_default=212992 -> 16777216
+18:09:35 === phase2 quick pass start; abeb65372b65820270a81ad2e1995131c10eab48 2026-09-09 ndb_tarantool: make test suite dynamic and generate module README 93aaecd5f0c3c5284282b3518fa5843d  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+18:09:35 loading dataset d5k
+errors: 0, replies: 15000
+18:09:40 tarantool rows=5000 redis keys=5201 ft docs=5000
+18:09:40 === repeat 1
+18:52:46 === repeat 2
+19:37:13 === repeat 3
+20:24:01 loading dataset d5k
+errors: 0, replies: 15000
+20:24:06 tarantool rows=5000 redis keys=5201 ft docs=5000
+20:24:06 === repeats done
+20:24:06 sysctl local restored: net.core.rmem_max=8388608 net.core.rmem_default=212992 net.core.wmem_max=8388608 net.core.wmem_default=212992 
+20:24:07 sysctl GEN_A restored: net.core.rmem_max=8388608 net.core.rmem_default=212992 net.core.wmem_max=16777216 net.core.wmem_default=212992 
+20:24:07 sysctl GEN_B restored: net.core.rmem_max=8388608 net.core.rmem_default=212992 net.core.wmem_max=8388608 net.core.wmem_default=212992 

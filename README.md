@@ -14,6 +14,7 @@ Tests ran on 2026-10-02/03.
 | — | [01-test-plan.md](01-test-plan.md) | Rig layout and the plan for all phases | — |
 | 0–1 | [02-phase0-1-correctness.md](02-phase0-1-correctness.md) | Build portability, plus probes for parameters, timeouts, failover, memory, errors, addresses and connections; Tarantool 3.x / 2.11 / 1.10 | **14 bugs (B1–B14)**, 3 of them high |
 | 2 | [03-phase2-throughput.md](03-phase2-throughput.md) | CDR lookup by caller at 5k and 500k rows: `ndb_tarantool` vs `ndb_redis` (ZSET, `FT.SEARCH`, full scan). One repeat | Redis ZSET used about 40 % less backend CPU per lookup; Tarantool beat `FT.SEARCH` (~2×) and the scan (~120×); throughput limited by the rig |
+| 2 (repeats) | [06-phase2-repeats.md](06-phase2-repeats.md) | Same cells, 3 repeats, with the rig no longer the limit: 18 remote SIPp instances, Kamailio on 14 cores, 16 MB UDP buffers, and drops attributed per step | **`ndb_redis` ZSET 30k cps vs `ndb_tarantool` 20k cps** for CDR lookup in every repeat; Tarantool beats `FT.SEARCH` (20k vs 5k); the no-backend rig passes 50k |
 | 3 | [04-phase3-trunk-limits.md](04-phase3-trunk-limits.md) | Trunk channel limits under 120 INVITEs in 20 ms, 20 runs per arm, with two must-fail controls | Tie: 0 of 20 runs oversold for both atomic designs |
 | 3a–c | [05-phase3abc-lifecycle.md](05-phase3abc-lifecycle.md) | Release paths: 486, a backend stall longer than `cmd_timeout`, and `kill -9` of Kamailio | Tie; a backend stall leaks reservations on both modules (8 vs 4 per stall), giving **bugs L1, L2** |
 
@@ -48,3 +49,5 @@ Details, reproduction steps and suggested fixes are in the per-phase reports.
 
   The scripts expect to run from `/var/tmp/ndbt` with podman.
 - `results/`: raw output (`results.tsv` per phase, driver logs, Kamailio logs, SIPp logs).
+
+Host addresses are replaced by placeholders throughout: `SUT_IP` (the Kamailio + backend host), and `GEN_A` / `GEN_B` (the SIPp load generators).

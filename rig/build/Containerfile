@@ -1,11 +1,13 @@
 # Kamailio master + kamailio/kamailio#4913 (ndb_tarantool) on Debian 13.
 # Debian 13 because the PR Makefile needs pkg-config msgpack-c (msgpack-c 6.x);
 # Ubuntu 20.04 and 24.04 ship msgpack.pc + libmsgpackc and the fallback -lmsgpack-c fails to link.
-#   podman build --build-arg PR_SHA=<sha> --build-arg SAN=0|1 -t ndbt-kam:<tag> .
+#   podman build --build-arg PR_SHA=<sha> --build-arg SAN=0|1 [--build-arg MEMPKG=sys] -t ndbt-kam:<tag> .
+# MEMPKG=sys: pkg_malloc = libc malloc, so ASan sees module heap bugs (Phase 4).
 # SAN=1 builds with ASan/UBSan (Phase 4).
 FROM docker.io/library/debian:13
 ARG PR_SHA
 ARG SAN=0
+ARG MEMPKG=
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
       build-essential bison flex pkg-config git ca-certificates \
@@ -18,7 +20,7 @@ RUN git clone --filter=blob:none https://github.com/kamailio/kamailio.git \
  && git log -1 --format='%H %cs %s' > /BUILD_REV
 WORKDIR /src/kamailio
 RUN if [ "$SAN" = 1 ]; then X='-fsanitize=address,undefined -fno-omit-frame-pointer -g'; else X=''; fi; \
-    make cfg PREFIX=/opt/kamailio CC_EXTRA_OPTS="$X" LD_EXTRA_OPTS="$X" \
+    make cfg PREFIX=/opt/kamailio CC_EXTRA_OPTS="$X" LD_EXTRA_OPTS="$X" ${MEMPKG:+MEMPKG=$MEMPKG} \
       include_modules="ndb_tarantool ndb_redis jansson" \
  && make Q=0 -j8 all > /build.log 2>&1 || (tail -60 /build.log; exit 1); \
     make install > /install.log 2>&1 || (tail -40 /install.log; exit 1); \

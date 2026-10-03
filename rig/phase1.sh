@@ -5,19 +5,21 @@
 # Output: p1/<stage>/... and one line per probe in p1/results.txt
 set -u
 cd /var/tmp/ndbt
-IMG=localhost/ndbt-kam:rel
-OUT=p1; mkdir -p $OUT
+IMG=${IMG:-localhost/ndbt-kam:rel}
+KAM_OPTS=${KAM_OPTS:-}   # extra podman run options, e.g. sanitizer env + ptrace for LSan
+OUT=${OUT:-p1}
+mkdir -p $OUT
 RES=$OUT/results.txt
 STAGES=${*:-basic slow big addr conns restart vers}
 
 kam_start() {   # name cfg [extra kamailio args...]
 	local name=$1 cfg=$2; shift 2
 	podman rm -f "$name" >/dev/null 2>&1
-	podman run -d --name "$name" --network host -v /var/tmp/ndbt:/data:Z $IMG \
+	podman run -d --name "$name" --network host -v /var/tmp/ndbt:/data:Z $KAM_OPTS $IMG \
 		kamailio -f "/data/$cfg" -DD -E "$@" >/dev/null
 	sleep 2
 }
-kam_stop() { podman rm -f "$1" >/dev/null 2>&1; }
+kam_stop() { podman stop -t 20 "$1" >/dev/null 2>&1; podman rm -f "$1" >/dev/null 2>&1; }   # SIGTERM first: LSan reports at exit
 
 probe() {   # stage name cid
 	local st=$1 name=$2 cid=$3 t0 t1 line
