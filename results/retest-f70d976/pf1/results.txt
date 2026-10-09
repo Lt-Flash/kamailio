@@ -1,0 +1,52 @@
+=== phase1 2026-10-10 02:29:58 AEDT stages: basic slow big addr conns restart
+f70d976697308097b9746c53bffe4d573f8f3f1f 2026-10-09 ndb_tarantool: address reviewer Lt-Flash audit findings (B1-B14 & Bug B)
+e3ba403c29f5b285b472c886ec877b14  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so
+basic	p_types	130ms	p_types cid=0123abc@h rc=1 r=[[["string", "0123abc@h"]]]
+basic	p_inject	111ms	p_inject cid=x","injected rc=1 r=[[["string", "x"], ["string", "injected"]]]
+basic	p_unicode	111ms	p_unicode cid=u1@h rc=1 r=[[["string", "Ж"]]]
+basic	p_badjson	110ms	p_badjson cid=b1@h rc=-1 r=
+basic	p_after	113ms	p_after cid=b2@h rc=1 r=["after"]
+basic	p_badjson2	112ms	p_badjson2 cid=b3@h rc=-1 r=
+basic	p_after	112ms	p_after cid=b4@h rc=1 r=["after"]
+basic	p_err	112ms	p_err cid=e1@h rc=-2 r=
+basic	p_nil	113ms	p_nil cid=e2@h rc=1 r=[null]
+basic	p_multi	112ms	p_multi cid=e3@h rc=1 r=[1, "two", [3]]
+slow	p_slow	414ms	p_slow cid=s1@h rc=-1 r=
+slow	p_slow	414ms	p_slow cid=s2@h rc=-1 r=
+slow	p_slow	414ms	p_slow cid=s3@h rc=-1 r=
+slow	p_slow	413ms	p_slow cid=s4@h rc=-1 r=
+slow	p_slow	109ms	p_slow cid=s5@h rc=-1 r=
+slow	p_slow	111ms	p_slow cid=s6@h rc=-1 r=
+slow	p_short_ok	111ms	p_short_ok cid=sok@h rc=-1 r=
+slow	p_dead	112ms	p_dead cid=d1@h rc=-1 r=
+slow	p_dead	112ms	p_dead cid=d2@h rc=-1 r=
+slow	p_dead	112ms	p_dead cid=d3@h rc=-1 r=
+slow	p_dead	112ms	p_dead cid=d4@h rc=-1 r=
+slow	p_dead	112ms	p_dead cid=d5@h rc=-1 r=
+slow	marked-disabled(short:13301)	2
+slow	recv-failures(short:13301)	4
+slow	marked-disabled(dead:13399)	1
+slow	connect-attempts(dead:13399)	3
+big-M8	p_big	128ms	p_big cid=g1@h rc=1 r=900004
+big-M8	p_seq_a	112ms	p_seq_a cid=g2@h rc=1 r=["a"]
+big-M8	p_seq_b	111ms	p_seq_b cid=g3@h rc=1 r=["b"]
+big-M8	p_huge	130ms	p_huge cid=g4@h rc=1 r=1100004
+big-M8	p_seq_a	111ms	p_seq_a cid=g5@h rc=1 r=["a"]
+big-M8	p_seq_b	112ms	p_seq_b cid=g6@h rc=1 r=["b"]
+big-M2	p_big	114ms	p_big cid=g1@h rc=-1 r=0
+big-M2	p_seq_a	113ms	p_seq_a cid=g2@h rc=1 r=["a"]
+big-M2	p_seq_b	112ms	p_seq_b cid=g3@h rc=1 r=["b"]
+big-M2	p_huge	112ms	p_huge cid=g4@h rc=-1 r=0
+big-M2	p_seq_a	113ms	p_seq_a cid=g5@h rc=1 r=["a"]
+big-M2	p_seq_b	111ms	p_seq_b cid=g6@h rc=1 r=["b"]
+addr	127.0.0.1	container=running	
+addr	localhost	container=running	
+addr	::1	container=running	
+conns	kamailio-processes=12	established-to-13301=8
+restart	before	answers=200 correct=200 wrong=0
+restart	load	answers=19601 correct=19601 wrong=0
+restart	after	answers=200 correct=200 wrong=0
+restart	kamailio-errors=377
+restart	tarantool-ready-again=02:30:41.909
+restart	first-failure=02:30:41.602 last-failure=02:30:42.000 disabled-marks=7
+=== done 02:30:58

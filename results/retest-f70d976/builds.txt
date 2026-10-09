@@ -1,0 +1,6 @@
+pull exit=0
+deb exit=0
+u24 exit=0
+--> 523f9c70f6d9
+Successfully tagged localhost/ndbt-kam:f70d-u24
+523f9c70f6d914728c1179954a87538d0d727be5650c01c4b2f7c07b368b2c1d

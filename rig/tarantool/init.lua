@@ -7,7 +7,7 @@ local fio = require('fio')
 local log = require('log')
 
 box.cfg{
-    listen = tonumber(os.getenv('TNT_PORT') or 3301),
+    listen = os.getenv('TNT_LISTEN') or tonumber(os.getenv('TNT_PORT') or 3301),
     memtx_memory = 1024 * 1024 * 1024,
     readahead = 1024 * 1024,
     log_level = 5,

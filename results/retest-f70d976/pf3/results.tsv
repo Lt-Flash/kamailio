@@ -1,0 +1,4 @@
+=== 2026-10-10 02:31:39 AEDT variant=3b runs=3 calls=120 burst=20ms hold=5000ms limits=15/35/50
+tnt	run1	t1:calls=7 peak=7/15 open=0	t2:calls=35 peak=35/35 open=0	t3:calls=50 peak=50/50 open=0	answered=92	503=28	486=0	uac_ok/fail=120 0	left_in_backend=8 0 0 	uac_rc=0	within-limits
+tnt	run2	t1:calls=7 peak=7/15 open=0	t2:calls=35 peak=35/35 open=0	t3:calls=50 peak=50/50 open=0	answered=92	503=28	486=0	uac_ok/fail=120 0	left_in_backend=8 0 0 	uac_rc=0	within-limits
+tnt	run3	t1:calls=7 peak=7/15 open=0	t2:calls=35 peak=35/35 open=0	t3:calls=50 peak=50/50 open=0	answered=92	503=28	486=0	uac_ok/fail=120 0	left_in_backend=8 0 0 	uac_rc=0	within-limits

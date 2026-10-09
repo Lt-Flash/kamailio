@@ -1,0 +1,48 @@
+2026-10-10T02:30:02.725267000+11:00  0(1) INFO: ndb_tarantool [tarantool_client.c:299]: tnt_add_server(): registered tarantool server [default] -> 127.0.0.1:13301
+2026-10-10T02:30:02.725890000+11:00  0(1) INFO: ndb_tarantool [tarantool_client.c:299]: tnt_add_server(): registered tarantool server [short] -> 127.0.0.1:13301
+2026-10-10T02:30:02.726042000+11:00  0(1) INFO: ndb_tarantool [tarantool_client.c:299]: tnt_add_server(): registered tarantool server [dead] -> 127.0.0.1:13399
+2026-10-10T02:30:02.731000000+11:00  0(1) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+2026-10-10T02:30:02.732891000+11:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-10T02:30:02.733024000+11:00 Listening on 
+2026-10-10T02:30:02.733110000+11:00              udp: 127.0.0.1:5060
+2026-10-10T02:30:02.733185000+11:00 Aliases: 
+2026-10-10T02:30:02.733259000+11:00              udp: localhost:5060
+2026-10-10T02:30:02.733364000+11:00 
+2026-10-10T02:30:02.733457000+11:00  0(1) INFO: <core> [main.c:3339]: main(): current open file limits [soft/hard]: [1048576/1048576]
+2026-10-10T02:30:02.733530000+11:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-10T02:30:02.733598000+11:00  0(1) INFO: sl [sl.c:178]: mod_init(): could not bind tm module - only stateless mode available during modules initialization
+2026-10-10T02:30:02.733661000+11:00  0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:168]: mod_init(): initializing ndb_tarantool module...
+2026-10-10T02:30:02.733725000+11:00  0(1) INFO: <core> [main.c:3410]: main(): processes (at least): 5 - shm size: 67108864 - pkg size: 8388608
+2026-10-10T02:30:02.733804000+11:00  0(1) INFO: <core> [main.c:3433]: main(): tcp main processing threads not enabled
+2026-10-10T02:30:02.733916000+11:00  0(1) INFO: <core> [core/udp_server.c:791]: probe_max_receive_buffer(): SO_RCVBUF is initially 212992 for fd 3
+2026-10-10T02:30:02.733995000+11:00  0(1) INFO: <core> [core/udp_server.c:861]: probe_max_receive_buffer(): SO_RCVBUF is finally 524288 on fd 3
+2026-10-10T02:30:02.734064000+11:00  0(1) INFO: <core> [core/udp_server.c:892]: probe_max_send_buffer(): SO_SNDBUF is initially 212992 for fd 3
+2026-10-10T02:30:02.734128000+11:00  0(1) INFO: <core> [core/udp_server.c:962]: probe_max_send_buffer(): SO_SNDBUF is finally 524288 on fd 3
+2026-10-10T02:30:02.734194000+11:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-10T02:30:02.734254000+11:00  0(1) INFO: sl [sl.c:197]: child_init(): could not bind tm module - only stateless mode available during runtime
+2026-10-10T02:30:02.734482000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-10T02:30:02.734561000+11:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:707]: tnt_child_init(): failed to connect to Tarantool 127.0.0.1:13399 on child init (init_without_tarantool is on)
+2026-10-10T02:30:02.735108000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:30:02.735467000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:30:05.147675000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1361]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+2026-10-10T02:30:05.270649000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:30:05.571605000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1361]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+2026-10-10T02:30:05.693934000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:30:05.995594000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1361]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+2026-10-10T02:30:05.995841000+11:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:06.117984000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:602]: tnt_conn_connect(): probing disabled tarantool server 127.0.0.1:13301...
+2026-10-10T02:30:06.118607000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:30:06.118715000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:670]: tnt_conn_connect(): tarantool server 127.0.0.1:13301 recovered successfully via active probe
+2026-10-10T02:30:06.420016000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1361]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Resource temporarily unavailable
+2026-10-10T02:30:06.420582000+11:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:06.539199000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:06.660108000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:06.782424000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1504]: tnt_exec_eval(): cannot execute eval: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:06.903654000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-10T02:30:06.903946000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13399 is down
+2026-10-10T02:30:07.025526000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-10T02:30:07.025839000+11:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13399 marked disabled for 10 seconds
+2026-10-10T02:30:07.025951000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13399 is down
+2026-10-10T02:30:07.147522000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13399 is down
+2026-10-10T02:30:07.268936000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13399 is down
+2026-10-10T02:30:07.391746000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13399 is down

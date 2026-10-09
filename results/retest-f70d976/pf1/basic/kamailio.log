@@ -1,0 +1,29 @@
+2026-10-10T02:29:58.660837000+11:00  0(1) INFO: ndb_tarantool [tarantool_client.c:299]: tnt_add_server(): registered tarantool server [default] -> 127.0.0.1:13301
+2026-10-10T02:29:58.661485000+11:00  0(1) INFO: ndb_tarantool [tarantool_client.c:299]: tnt_add_server(): registered tarantool server [short] -> 127.0.0.1:13301
+2026-10-10T02:29:58.661598000+11:00  0(1) INFO: ndb_tarantool [tarantool_client.c:299]: tnt_add_server(): registered tarantool server [dead] -> 127.0.0.1:13399
+2026-10-10T02:29:58.666854000+11:00  0(1) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+2026-10-10T02:29:58.669554000+11:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-10T02:29:58.669691000+11:00 Listening on 
+2026-10-10T02:29:58.670113000+11:00              udp: 127.0.0.1:5060
+2026-10-10T02:29:58.670209000+11:00 Aliases: 
+2026-10-10T02:29:58.670283000+11:00              udp: localhost:5060
+2026-10-10T02:29:58.670392000+11:00 
+2026-10-10T02:29:58.670462000+11:00  0(1) INFO: <core> [main.c:3339]: main(): current open file limits [soft/hard]: [1048576/1048576]
+2026-10-10T02:29:58.670536000+11:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-10T02:29:58.670620000+11:00  0(1) INFO: sl [sl.c:178]: mod_init(): could not bind tm module - only stateless mode available during modules initialization
+2026-10-10T02:29:58.670695000+11:00  0(1) INFO: ndb_tarantool [ndb_tarantool_mod.c:168]: mod_init(): initializing ndb_tarantool module...
+2026-10-10T02:29:58.670788000+11:00  0(1) INFO: <core> [main.c:3410]: main(): processes (at least): 5 - shm size: 67108864 - pkg size: 8388608
+2026-10-10T02:29:58.670860000+11:00  0(1) INFO: <core> [main.c:3433]: main(): tcp main processing threads not enabled
+2026-10-10T02:29:58.671030000+11:00  0(1) INFO: <core> [core/udp_server.c:791]: probe_max_receive_buffer(): SO_RCVBUF is initially 212992 for fd 3
+2026-10-10T02:29:58.671123000+11:00  0(1) INFO: <core> [core/udp_server.c:861]: probe_max_receive_buffer(): SO_RCVBUF is finally 524288 on fd 3
+2026-10-10T02:29:58.671212000+11:00  0(1) INFO: <core> [core/udp_server.c:892]: probe_max_send_buffer(): SO_SNDBUF is initially 212992 for fd 3
+2026-10-10T02:29:58.671304000+11:00  0(1) INFO: <core> [core/udp_server.c:962]: probe_max_send_buffer(): SO_SNDBUF is finally 524288 on fd 3
+2026-10-10T02:29:58.671402000+11:00  0(1) WARNING: sl [../../modules/tm/tm_load.h:157]: load_tm_api(): Cannot import load_tm function from tm module
+2026-10-10T02:29:58.671479000+11:00  0(1) INFO: sl [sl.c:197]: child_init(): could not bind tm module - only stateless mode available during runtime
+2026-10-10T02:29:58.671952000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13399 failed: Connection refused
+2026-10-10T02:29:58.672055000+11:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:707]: tnt_child_init(): failed to connect to Tarantool 127.0.0.1:13399 on child init (init_without_tarantool is on)
+2026-10-10T02:29:58.672655000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:29:58.673129000+11:00  1(2) INFO: ndb_tarantool [tarantool_client.c:533]: tnt_auth_scramble(): authenticated successfully as 'kam' on 127.0.0.1:13301
+2026-10-10T02:30:01.164556000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1335]: tnt_exec_call(): failed to pack procedure parameters for proc=echo (syntax error or malformed JSON)
+2026-10-10T02:30:01.410790000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1335]: tnt_exec_call(): failed to pack procedure parameters for proc=echo (syntax error or malformed JSON)
+2026-10-10T02:30:01.657798000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1432]: tnt_exec_call(): Tarantool call 'fail' error 0x8020: /data/init.lua:137: deliberate failure

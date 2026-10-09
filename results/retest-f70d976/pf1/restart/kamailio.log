@@ -1,0 +1,429 @@
+2026-10-10T02:30:33.528933000+11:00 loading modules under config path: /opt/kamailio/lib64/kamailio/modules/
+2026-10-10T02:30:33.529682000+11:00 Listening on 
+2026-10-10T02:30:33.529803000+11:00              udp: 127.0.0.1 [127.0.0.1]:5060
+2026-10-10T02:30:33.529896000+11:00 Aliases: 
+2026-10-10T02:30:33.529960000+11:00 
+2026-10-10T02:30:33.530021000+11:00  0(1) ERROR: tm [tm_load.c:35]: load_tm():  Module not initialized yet, make sure that all modules that need tm module are loaded after tm in the configuration file
+2026-10-10T02:30:41.602632000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1361]: tnt_exec_call(): failed to receive IPROTO_CALL response header from 127.0.0.1:13301: Operation not permitted
+2026-10-10T02:30:41.602998000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1 6(7) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1:13301: Broken pipe
+2026-10-10T02:30:41.603116000+11:00 :13301: Broken pipe
+2026-10-10T02:30:41.605058000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1:13301: Broken pipe
+2026-10-10T02:30:41.605201000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1:13301: Broken pipe
+2026-10-10T02:30:41.605391000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.605481000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.605566000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.605658000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.609100000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.609282000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.609377000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.609450000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.609531000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.609601000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.611846000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1:13301: Broken pipe
+2026-10-10T02:30:41.611965000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1:13301: Broken pipe
+2026-10-10T02:30:41.612047000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.612122000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.612190000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.612246000+11:00  2(3) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.612341000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.615681000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.615829000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.615918000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.615995000+11:00  1(2) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.616066000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.616130000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.616196000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.616252000+11:00  6(7) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.616338000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.619554000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused 7(8) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.619680000+11:00 
+2026-10-10T02:30:41.619762000+11:00  8(9) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10  7(8) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.619845000+11:00 seconds
+2026-10-10T02:30:41.619914000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.619984000+11:00 n
+2026-10-10T02:30:41.622135000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.622252000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1349]: tnt_exec_call(): failed to send IPROTO_CALL (proc=cdr_by_src) to 127.0.0.1 3(4) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused:13301: Broken pipe
+2026-10-10T02:30:41.622352000+11:00 
+2026-10-10T02:30:41.622421000+11:00  3(4) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.622487000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.624994000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.625079000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused 2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow
+2026-10-10T02:30:41.625160000+11:00 n
+2026-10-10T02:30:41.625233000+11:00  4(5) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.625318000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.628375000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.628488000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.628559000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.630896000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.631078000+11:00 n
+2026-10-10T02:30:41.631326000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.631452000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.634574000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.634739000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.634865000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.635001000+11:00 n
+2026-10-10T02:30:41.638394000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.638515000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.638768000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.638867000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.642493000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.642612000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.642798000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.642897000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.646585000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.646733000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.646860000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.646974000+11:00 n
+2026-10-10T02:30:41.650480000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.650669000+11:00 n
+2026-10-10T02:30:41.650788000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.650926000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.654400000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.654519000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.654656000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.654738000+11:00 n
+2026-10-10T02:30:41.658273000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.658411000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.659708000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.659837000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.662139000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.662273000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.664724000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.664861000+11:00 n
+2026-10-10T02:30:41.664939000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.665008000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.669752000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.669875000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.669954000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.670016000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.670078000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.673694000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.673832000+11:00 n
+2026-10-10T02:30:41.673917000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.673997000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.677636000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.677753000+11:00 n
+2026-10-10T02:30:41.677845000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.677920000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.682680000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.682797000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.682898000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.682966000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.686550000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.686686000+11:00 n
+2026-10-10T02:30:41.686764000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.686861000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.690480000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.690599000+11:00 n
+2026-10-10T02:30:41.690867000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.690991000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:640]: tnt_conn_connect(): connect() to 127.0.0.1:13301 failed: Connection refused
+2026-10-10T02:30:41.691084000+11:00  5(6) WARNING: ndb_tarantool [tarantool_client.c:570]: tnt_conn_fail(): tarantool server 127.0.0.1:13301 marked disabled for 10 seconds
+2026-10-10T02:30:41.691171000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.694658000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.694776000+11:00 n
+2026-10-10T02:30:41.694861000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.694932000+11:00 n
+2026-10-10T02:30:41.697620000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.697767000+11:00 n
+2026-10-10T02:30:41.700240000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.700371000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.702740000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.702868000+11:00 n
+2026-10-10T02:30:41.702944000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.705283000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.705407000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.706594000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.706676000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.706797000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.706885000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.711581000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.711689000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.711829000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.711922000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.715432000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.715545000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.715621000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.717968000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.718129000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.720486000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.720608000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.720725000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.720805000+11:00 n
+2026-10-10T02:30:41.724390000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.724505000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.724597000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.724661000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.728274000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.728399000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.729601000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.729705000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.732115000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.732217000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.734614000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.734734000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.734806000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.738229000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.738374000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.739643000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.739741000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.742109000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.742227000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.744573000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.744693000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.744965000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.745196000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.748481000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.748609000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.748686000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.748759000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.748840000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.753518000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.753675000+11:00 n
+2026-10-10T02:30:41.753758000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.753846000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.753914000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.758466000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.758587000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.758714000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.758849000+11:00 n
+2026-10-10T02:30:41.761417000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.761580000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.763866000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.764007000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.764114000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.767589000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.767691000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.767771000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.770207000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.770347000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.770428000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.772764000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.772885000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.772959000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.775337000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.775459000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.777912000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.778068000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.778170000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.778266000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.781937000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.782060000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.782142000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.785645000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.785752000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.785866000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.785957000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.789529000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.789634000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.789735000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.789830000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.793438000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.793562000+11:00 n
+2026-10-10T02:30:41.793638000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.793706000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.796204000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.796341000+11:00 n
+2026-10-10T02:30:41.798735000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.798863000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.801257000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.801390000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.801469000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.801564000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.805109000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.805236000+11:00 n
+2026-10-10T02:30:41.807639000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.807761000+11:00 n
+2026-10-10T02:30:41.807848000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.807923000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.811595000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.811715000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.811790000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.811868000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.815518000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.815638000+11:00 n
+2026-10-10T02:30:41.815745000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.815841000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.819460000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.819579000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.819659000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.819726000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.822252000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.822399000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.824843000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.824976000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.825054000+11:00 n
+2026-10-10T02:30:41.828489000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.828607000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.828693000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.828763000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.831352000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.831470000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.833902000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.834031000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.834114000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.837628000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.837745000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.837832000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.840305000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.840431000+11:00 n
+2026-10-10T02:30:41.840512000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.842839000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.842973000+11:00 n
+2026-10-10T02:30:41.845400000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.845508000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.845619000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.845695000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.849251000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.849374000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.849665000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.849751000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.853313000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.853442000+11:00 n
+2026-10-10T02:30:41.853535000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.856016000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.856165000+11:00 n
+2026-10-10T02:30:41.858610000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.858731000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.858837000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.861107000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.861230000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.861323000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.863766000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.863908000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.863997000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.867349000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.867444000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.867785000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.867926000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.871449000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.871546000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.871667000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.871752000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.874182000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.874319000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.876691000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.876782000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.879242000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.879390000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.881734000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.881863000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.881965000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.884350000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.884465000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.884536000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.884619000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.887088000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.887206000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.890721000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.890919000+11:00 n
+2026-10-10T02:30:41.891038000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.893308000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.893409000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.893526000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.893605000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.897120000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.897201000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.899678000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.899805000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.899925000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.902221000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.902311000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.902612000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.902692000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.906318000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.906442000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.907712000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.907841000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.910129000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.910216000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.912727000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.912860000+11:00 n
+2026-10-10T02:30:41.912942000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.915275000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.915437000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.916671000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.916779000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.919498000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.919616000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.919827000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.919920000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.919988000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.924657000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.924779000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.924884000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.924964000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.928620000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.928741000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.928827000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.928923000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.932413000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.932539000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.932617000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.932679000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.936261000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.936390000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.936478000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.938832000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.938965000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.941308000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.941442000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.941574000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.941659000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.945225000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.945343000+11:00 n
+2026-10-10T02:30:41.946661000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.946776000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.949204000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.949328000+11:00 n
+2026-10-10T02:30:41.951790000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.951924000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.952019000+11:00 n
+2026-10-10T02:30:41.954655000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.954775000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.954861000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.954933000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.957426000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.957545000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.960049000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.960179000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.960255000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.963769000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.963925000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.964025000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.964099000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.967530000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.967678000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.967763000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.967849000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.971412000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.971535000+11:00  2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.971634000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.973974000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.974094000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.974177000+11:00  8(9) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 2(3) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.974242000+11:00 n
+2026-10-10T02:30:41.977775000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.977916000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.977987000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.981400000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.981529000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.981699000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is dow 1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.981819000+11:00 n
+2026-10-10T02:30:41.985396000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.985501000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.985652000+11:00  6(7) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.985740000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.989423000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.989527000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.989610000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.989676000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.992163000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.992282000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.994734000+11:00  1(2) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.994871000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.997329000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.997453000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.997601000+11:00  7(8) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:41.997685000+11:00  5(6) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:42.000210000+11:00  3(4) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down
+2026-10-10T02:30:42.000364000+11:00  4(5) ERROR: ndb_tarantool [tarantool_client.c:1310]: tnt_exec_call(): cannot execute call: connection to 127.0.0.1:13301 is down

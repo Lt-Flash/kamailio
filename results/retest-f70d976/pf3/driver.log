@@ -1,0 +1,3 @@
+02:31:39 === phase3 start: arms=tnt runs=3 calls=120 burst=20ms hold=5000ms; f70d976697308097b9746c53bffe4d573f8f3f1f 2026-10-09 ndb_tarantool: address reviewer Lt-Flash audit findings (B1-B14 & Bug B) e3ba403c29f5b285b472c886ec877b14  /opt/kamailio/lib64/kamailio/modules/ndb_tarantool.so 
+02:31:39 arm tnt (-A WITH_TNT)
+02:32:18 === phase3 done
